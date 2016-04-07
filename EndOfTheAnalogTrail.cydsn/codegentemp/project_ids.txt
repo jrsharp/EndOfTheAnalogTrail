@@ -1,0 +1,9 @@
+F:\Downloads\FunWithLEDs\FunWithLEDs\P4_OneRing.cydsn\P4_OneRing.cyprj|b31d66ae-a11b-4b83-b922-89272b5ec0ed
+F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLightLib.cyprj|2eef47b1-4e82-4ee9-aebd-2f49b6bc7772
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8867605e-e7e6-4676-9116-d44a1bee6ce3
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|34280ae4-dcc8-4484-a269-0f48040c01f7
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c09bb6e8-298c-4933-a88d-a1270465ca25
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b8904425-58e7-4332-ab01-fd1f452adc4e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|53651217-64ee-421d-a30b-25b7c9d6a226
+F:\Downloads\FunWithLEDs\FunWithLEDs\P4_MultiRings.cydsn\P4_MultiRings.cyprj|5f345600-44be-4da8-aa62-95de4cf150fc
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail.cydsn\EndOfTheAnalogTrail.cyprj|c82d907b-ea3b-4eaa-a6fd-2be50aad32bb

@@ -1,0 +1,1243 @@
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	2
+  19              		.global	main
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	main, %function
+  23              	main:
+  24              	.LFB34:
+  25              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include <project.h>
+  13:.\main.c      **** #include <stdlib.h>
+  14:.\main.c      **** 
+  15:.\main.c      **** extern const uint32 StripLights_CLUT[ ];
+  16:.\main.c      **** 
+  17:.\main.c      **** static int stars[] = { 0, 1, 2, 3, 7, 8, 18, 19, 20, 21, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41, 46
+  18:.\main.c      **** static int lightning[] = { 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 27, 28, 29, 30, 31, 32, 33, 
+  19:.\main.c      **** static int campfire[] = { 236, 237, 238 };
+  20:.\main.c      **** static int phone[] = { 239 };
+  21:.\main.c      **** 
+  22:.\main.c      **** int main() {
+  26              		.loc 1 22 0
+  27              		.cfi_startproc
+  28 0000 10B5     		push	{r4, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 4, -8
+  31              		.cfi_offset 14, -4
+  23:.\main.c      ****     // Initialize StripLights
+  24:.\main.c      ****     StripLights_Start();
+  32              		.loc 1 24 0
+  33 0002 FFF7FEFF 		bl	StripLights_Start
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 2
+
+
+  34              	.LVL0:
+  25:.\main.c      **** 	
+  26:.\main.c      **** 	// Set dim level 0 = full power, 4 = lowest power
+  27:.\main.c      ****     StripLights_Dim(3); 
+  35              		.loc 1 27 0
+  36 0006 0320     		mov	r0, #3
+  37 0008 FFF7FEFF 		bl	StripLights_Dim
+  38              	.LVL1:
+  28:.\main.c      **** 	
+  29:.\main.c      **** 	// Clear all memory to black
+  30:.\main.c      **** 	StripLights_MemClear(StripLights_BLACK);
+  39              		.loc 1 30 0
+  40 000c 1820     		mov	r0, #24
+  41 000e FFF7FEFF 		bl	StripLights_MemClear
+  42              	.LVL2:
+  31:.\main.c      ****     
+  32:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  43              		.loc 1 32 0
+  44              	@ 32 ".\main.c" 1
+  45 0012 62B6     		CPSIE   i
+  46              	@ 0 "" 2
+  33:.\main.c      **** 
+  34:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  35:.\main.c      **** 
+  36:.\main.c      ****     int foo = rand();
+  47              		.loc 1 36 0
+  48              		.code	16
+  49 0014 FFF7FEFF 		bl	rand
+  50              	.LVL3:
+  51              	.L2:
+  37:.\main.c      ****     int i;
+  38:.\main.c      ****     int starsLen = sizeof(stars)/sizeof(int);
+  39:.\main.c      ****     int lightningLen = sizeof(lightning)/sizeof(int);
+  40:.\main.c      ****  
+  41:.\main.c      ****     // Wait for last update to finish
+  42:.\main.c      **** 	while( StripLights_Ready() == 0); 
+  52              		.loc 1 42 0 discriminator 1
+  53 0018 FFF7FEFF 		bl	StripLights_Ready
+  54              	.LVL4:
+  55 001c 0028     		cmp	r0, #0
+  56 001e FBD0     		beq	.L2
+  57 0020 0024     		mov	r4, #0
+  58 0022 07E0     		b	.L3
+  59              	.LVL5:
+  60              	.L4:
+  43:.\main.c      ****         
+  44:.\main.c      ****     for (i = 0; i < starsLen; i++) {
+  45:.\main.c      ****         StripLights_Pixel(stars[i], 0, StripLights_CYAN );
+  61              		.loc 1 45 0 discriminator 3
+  62 0024 A200     		lsl	r2, r4, #2
+  63 0026 164B     		ldr	r3, .L10
+  64 0028 D058     		ldr	r0, [r2, r3]
+  65 002a 0021     		mov	r1, #0
+  66 002c 5A22     		mov	r2, #90
+  67 002e FFF7FEFF 		bl	StripLights_Pixel
+  68              	.LVL6:
+  44:.\main.c      ****         StripLights_Pixel(stars[i], 0, StripLights_CYAN );
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 3
+
+
+  69              		.loc 1 44 0 discriminator 3
+  70 0032 0134     		add	r4, r4, #1
+  71              	.LVL7:
+  72              	.L3:
+  44:.\main.c      ****         StripLights_Pixel(stars[i], 0, StripLights_CYAN );
+  73              		.loc 1 44 0 is_stmt 0 discriminator 1
+  74 0034 202C     		cmp	r4, #32
+  75 0036 F5DD     		ble	.L4
+  76 0038 0024     		mov	r4, #0
+  77              	.LVL8:
+  78 003a 08E0     		b	.L5
+  79              	.LVL9:
+  80              	.L6:
+  46:.\main.c      ****     }
+  47:.\main.c      ****     
+  48:.\main.c      ****     for (i = 0; i < lightningLen; i++) {
+  49:.\main.c      ****         StripLights_Pixel(lightning[i], 0, StripLights_WHITE);
+  81              		.loc 1 49 0 is_stmt 1 discriminator 3
+  82 003c A300     		lsl	r3, r4, #2
+  83 003e 114A     		ldr	r2, .L10+4
+  84 0040 D318     		add	r3, r2, r3
+  85 0042 5868     		ldr	r0, [r3, #4]
+  86 0044 0021     		mov	r1, #0
+  87 0046 5722     		mov	r2, #87
+  88 0048 FFF7FEFF 		bl	StripLights_Pixel
+  89              	.LVL10:
+  48:.\main.c      ****         StripLights_Pixel(lightning[i], 0, StripLights_WHITE);
+  90              		.loc 1 48 0 discriminator 3
+  91 004c 0134     		add	r4, r4, #1
+  92              	.LVL11:
+  93              	.L5:
+  48:.\main.c      ****         StripLights_Pixel(lightning[i], 0, StripLights_WHITE);
+  94              		.loc 1 48 0 is_stmt 0 discriminator 1
+  95 004e 292C     		cmp	r4, #41
+  96 0050 F4DD     		ble	.L6
+  97 0052 0024     		mov	r4, #0
+  98              	.LVL12:
+  99 0054 08E0     		b	.L7
+ 100              	.LVL13:
+ 101              	.L8:
+  50:.\main.c      ****     }
+  51:.\main.c      ****     
+  52:.\main.c      ****     for (i = 0; i < 3; i++) {
+  53:.\main.c      ****         StripLights_Pixel(campfire[i], 0, StripLights_RED);
+ 102              		.loc 1 53 0 is_stmt 1 discriminator 3
+ 103 0056 A300     		lsl	r3, r4, #2
+ 104 0058 0B4A     		ldr	r2, .L10+8
+ 105 005a D318     		add	r3, r2, r3
+ 106 005c D86A     		ldr	r0, [r3, #44]
+ 107 005e 0021     		mov	r1, #0
+ 108 0060 4822     		mov	r2, #72
+ 109 0062 FFF7FEFF 		bl	StripLights_Pixel
+ 110              	.LVL14:
+  52:.\main.c      ****         StripLights_Pixel(campfire[i], 0, StripLights_RED);
+ 111              		.loc 1 52 0 discriminator 3
+ 112 0066 0134     		add	r4, r4, #1
+ 113              	.LVL15:
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 4
+
+
+ 114              	.L7:
+  52:.\main.c      ****         StripLights_Pixel(campfire[i], 0, StripLights_RED);
+ 115              		.loc 1 52 0 is_stmt 0 discriminator 1
+ 116 0068 022C     		cmp	r4, #2
+ 117 006a F4DD     		ble	.L8
+  54:.\main.c      ****     }
+  55:.\main.c      ****     
+  56:.\main.c      ****     StripLights_Pixel(phone[0], 0, StripLights_BLUE);
+ 118              		.loc 1 56 0 is_stmt 1
+ 119 006c EF20     		mov	r0, #239
+ 120 006e 0021     		mov	r1, #0
+ 121 0070 1B22     		mov	r2, #27
+ 122 0072 FFF7FEFF 		bl	StripLights_Pixel
+ 123              	.LVL16:
+  57:.\main.c      ****     
+  58:.\main.c      ****     StripLights_Trigger(1);
+ 124              		.loc 1 58 0
+ 125 0076 0120     		mov	r0, #1
+ 126 0078 FFF7FEFF 		bl	StripLights_Trigger
+ 127              	.LVL17:
+ 128              	.L9:
+  59:.\main.c      ****     
+  60:.\main.c      ****     for(;;)
+  61:.\main.c      ****     {
+  62:.\main.c      ****         /* Place your application code here. */
+  63:.\main.c      ****     }
+ 129              		.loc 1 63 0 discriminator 1
+ 130 007c FEE7     		b	.L9
+ 131              	.L11:
+ 132 007e C046     		.align	2
+ 133              	.L10:
+ 134 0080 00000000 		.word	.LANCHOR0
+ 135 0084 80000000 		.word	.LANCHOR1
+ 136 0088 00010000 		.word	.LANCHOR2
+ 137              		.cfi_endproc
+ 138              	.LFE34:
+ 139              		.size	main, .-main
+ 140              		.section	.rodata
+ 141              		.align	2
+ 142              		.set	.LANCHOR0,. + 0
+ 143              		.set	.LANCHOR1,. + 128
+ 144              		.set	.LANCHOR2,. + 256
+ 145              		.type	stars, %object
+ 146              		.size	stars, 132
+ 147              	stars:
+ 148 0000 00000000 		.word	0
+ 149 0004 01000000 		.word	1
+ 150 0008 02000000 		.word	2
+ 151 000c 03000000 		.word	3
+ 152 0010 07000000 		.word	7
+ 153 0014 08000000 		.word	8
+ 154 0018 12000000 		.word	18
+ 155 001c 13000000 		.word	19
+ 156 0020 14000000 		.word	20
+ 157 0024 15000000 		.word	21
+ 158 0028 16000000 		.word	22
+ 159 002c 17000000 		.word	23
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 5
+
+
+ 160 0030 18000000 		.word	24
+ 161 0034 19000000 		.word	25
+ 162 0038 1A000000 		.word	26
+ 163 003c 25000000 		.word	37
+ 164 0040 26000000 		.word	38
+ 165 0044 27000000 		.word	39
+ 166 0048 28000000 		.word	40
+ 167 004c 29000000 		.word	41
+ 168 0050 2E000000 		.word	46
+ 169 0054 33000000 		.word	51
+ 170 0058 39000000 		.word	57
+ 171 005c 3A000000 		.word	58
+ 172 0060 3B000000 		.word	59
+ 173 0064 3C000000 		.word	60
+ 174 0068 3D000000 		.word	61
+ 175 006c 3E000000 		.word	62
+ 176 0070 3F000000 		.word	63
+ 177 0074 40000000 		.word	64
+ 178 0078 45000000 		.word	69
+ 179 007c 4A000000 		.word	74
+ 180 0080 4B000000 		.word	75
+ 181              		.type	lightning, %object
+ 182              		.size	lightning, 168
+ 183              	lightning:
+ 184 0084 04000000 		.word	4
+ 185 0088 05000000 		.word	5
+ 186 008c 06000000 		.word	6
+ 187 0090 09000000 		.word	9
+ 188 0094 0A000000 		.word	10
+ 189 0098 0B000000 		.word	11
+ 190 009c 0C000000 		.word	12
+ 191 00a0 0D000000 		.word	13
+ 192 00a4 0E000000 		.word	14
+ 193 00a8 0F000000 		.word	15
+ 194 00ac 10000000 		.word	16
+ 195 00b0 11000000 		.word	17
+ 196 00b4 1B000000 		.word	27
+ 197 00b8 1C000000 		.word	28
+ 198 00bc 1D000000 		.word	29
+ 199 00c0 1E000000 		.word	30
+ 200 00c4 1F000000 		.word	31
+ 201 00c8 20000000 		.word	32
+ 202 00cc 21000000 		.word	33
+ 203 00d0 22000000 		.word	34
+ 204 00d4 23000000 		.word	35
+ 205 00d8 24000000 		.word	36
+ 206 00dc 2A000000 		.word	42
+ 207 00e0 2B000000 		.word	43
+ 208 00e4 2C000000 		.word	44
+ 209 00e8 2D000000 		.word	45
+ 210 00ec 2F000000 		.word	47
+ 211 00f0 30000000 		.word	48
+ 212 00f4 31000000 		.word	49
+ 213 00f8 32000000 		.word	50
+ 214 00fc 34000000 		.word	52
+ 215 0100 35000000 		.word	53
+ 216 0104 36000000 		.word	54
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 6
+
+
+ 217 0108 37000000 		.word	55
+ 218 010c 38000000 		.word	56
+ 219 0110 41000000 		.word	65
+ 220 0114 42000000 		.word	66
+ 221 0118 43000000 		.word	67
+ 222 011c 44000000 		.word	68
+ 223 0120 46000000 		.word	70
+ 224 0124 48000000 		.word	72
+ 225 0128 48000000 		.word	72
+ 226              		.type	campfire, %object
+ 227              		.size	campfire, 12
+ 228              	campfire:
+ 229 012c EC000000 		.word	236
+ 230 0130 ED000000 		.word	237
+ 231 0134 EE000000 		.word	238
+ 232              		.text
+ 233              	.Letext0:
+ 234              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 235              		.file 3 "Generated_Source\\PSoC4/StripLights.h"
+ 236              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 237              		.section	.debug_info,"",%progbits
+ 238              	.Ldebug_info0:
+ 239 0000 CA020000 		.4byte	0x2ca
+ 240 0004 0400     		.2byte	0x4
+ 241 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 242 000a 04       		.byte	0x4
+ 243 000b 01       		.uleb128 0x1
+ 244 000c 4D010000 		.4byte	.LASF26
+ 245 0010 01       		.byte	0x1
+ 246 0011 ED000000 		.4byte	.LASF27
+ 247 0015 00000000 		.4byte	.LASF28
+ 248 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 249 001d 00000000 		.4byte	0
+ 250 0021 00000000 		.4byte	.Ldebug_line0
+ 251 0025 02       		.uleb128 0x2
+ 252 0026 01       		.byte	0x1
+ 253 0027 06       		.byte	0x6
+ 254 0028 0B020000 		.4byte	.LASF0
+ 255 002c 02       		.uleb128 0x2
+ 256 002d 01       		.byte	0x1
+ 257 002e 08       		.byte	0x8
+ 258 002f A2000000 		.4byte	.LASF1
+ 259 0033 02       		.uleb128 0x2
+ 260 0034 02       		.byte	0x2
+ 261 0035 05       		.byte	0x5
+ 262 0036 E8010000 		.4byte	.LASF2
+ 263 003a 02       		.uleb128 0x2
+ 264 003b 02       		.byte	0x2
+ 265 003c 07       		.byte	0x7
+ 266 003d 72000000 		.4byte	.LASF3
+ 267 0041 02       		.uleb128 0x2
+ 268 0042 04       		.byte	0x4
+ 269 0043 05       		.byte	0x5
+ 270 0044 F2010000 		.4byte	.LASF4
+ 271 0048 02       		.uleb128 0x2
+ 272 0049 04       		.byte	0x4
+ 273 004a 07       		.byte	0x7
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 7
+
+
+ 274 004b B0000000 		.4byte	.LASF5
+ 275 004f 02       		.uleb128 0x2
+ 276 0050 08       		.byte	0x8
+ 277 0051 05       		.byte	0x5
+ 278 0052 28010000 		.4byte	.LASF6
+ 279 0056 02       		.uleb128 0x2
+ 280 0057 08       		.byte	0x8
+ 281 0058 07       		.byte	0x7
+ 282 0059 8B000000 		.4byte	.LASF7
+ 283 005d 03       		.uleb128 0x3
+ 284 005e 04       		.byte	0x4
+ 285 005f 05       		.byte	0x5
+ 286 0060 696E7400 		.ascii	"int\000"
+ 287 0064 02       		.uleb128 0x2
+ 288 0065 04       		.byte	0x4
+ 289 0066 07       		.byte	0x7
+ 290 0067 02010000 		.4byte	.LASF8
+ 291 006b 04       		.uleb128 0x4
+ 292 006c F6000000 		.4byte	.LASF9
+ 293 0070 02       		.byte	0x2
+ 294 0071 3A01     		.2byte	0x13a
+ 295 0073 48000000 		.4byte	0x48
+ 296 0077 04       		.uleb128 0x4
+ 297 0078 C2000000 		.4byte	.LASF10
+ 298 007c 02       		.byte	0x2
+ 299 007d 3D01     		.2byte	0x13d
+ 300 007f 41000000 		.4byte	0x41
+ 301 0083 02       		.uleb128 0x2
+ 302 0084 04       		.byte	0x4
+ 303 0085 04       		.byte	0x4
+ 304 0086 85000000 		.4byte	.LASF11
+ 305 008a 02       		.uleb128 0x2
+ 306 008b 08       		.byte	0x8
+ 307 008c 04       		.byte	0x4
+ 308 008d E6000000 		.4byte	.LASF12
+ 309 0091 02       		.uleb128 0x2
+ 310 0092 01       		.byte	0x1
+ 311 0093 08       		.byte	0x8
+ 312 0094 36010000 		.4byte	.LASF13
+ 313 0098 02       		.uleb128 0x2
+ 314 0099 04       		.byte	0x4
+ 315 009a 07       		.byte	0x7
+ 316 009b 1F010000 		.4byte	.LASF14
+ 317 009f 05       		.uleb128 0x5
+ 318 00a0 FD000000 		.4byte	.LASF29
+ 319 00a4 01       		.byte	0x1
+ 320 00a5 16       		.byte	0x16
+ 321 00a6 5D000000 		.4byte	0x5d
+ 322 00aa 00000000 		.4byte	.LFB34
+ 323 00ae 8C000000 		.4byte	.LFE34-.LFB34
+ 324 00b2 01       		.uleb128 0x1
+ 325 00b3 9C       		.byte	0x9c
+ 326 00b4 CF010000 		.4byte	0x1cf
+ 327 00b8 06       		.uleb128 0x6
+ 328 00b9 666F6F00 		.ascii	"foo\000"
+ 329 00bd 01       		.byte	0x1
+ 330 00be 24       		.byte	0x24
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 8
+
+
+ 331 00bf 5D000000 		.4byte	0x5d
+ 332 00c3 07       		.uleb128 0x7
+ 333 00c4 6900     		.ascii	"i\000"
+ 334 00c6 01       		.byte	0x1
+ 335 00c7 25       		.byte	0x25
+ 336 00c8 5D000000 		.4byte	0x5d
+ 337 00cc 00000000 		.4byte	.LLST0
+ 338 00d0 08       		.uleb128 0x8
+ 339 00d1 C8000000 		.4byte	.LASF15
+ 340 00d5 01       		.byte	0x1
+ 341 00d6 26       		.byte	0x26
+ 342 00d7 5D000000 		.4byte	0x5d
+ 343 00db 21       		.byte	0x21
+ 344 00dc 08       		.uleb128 0x8
+ 345 00dd DB010000 		.4byte	.LASF16
+ 346 00e1 01       		.byte	0x1
+ 347 00e2 27       		.byte	0x27
+ 348 00e3 5D000000 		.4byte	0x5d
+ 349 00e7 2A       		.byte	0x2a
+ 350 00e8 09       		.uleb128 0x9
+ 351 00e9 06000000 		.4byte	.LVL0
+ 352 00ed 66020000 		.4byte	0x266
+ 353 00f1 0A       		.uleb128 0xa
+ 354 00f2 0C000000 		.4byte	.LVL1
+ 355 00f6 6D020000 		.4byte	0x26d
+ 356 00fa 04010000 		.4byte	0x104
+ 357 00fe 0B       		.uleb128 0xb
+ 358 00ff 01       		.uleb128 0x1
+ 359 0100 50       		.byte	0x50
+ 360 0101 01       		.uleb128 0x1
+ 361 0102 33       		.byte	0x33
+ 362 0103 00       		.byte	0
+ 363 0104 0A       		.uleb128 0xa
+ 364 0105 12000000 		.4byte	.LVL2
+ 365 0109 7E020000 		.4byte	0x27e
+ 366 010d 17010000 		.4byte	0x117
+ 367 0111 0B       		.uleb128 0xb
+ 368 0112 01       		.uleb128 0x1
+ 369 0113 50       		.byte	0x50
+ 370 0114 01       		.uleb128 0x1
+ 371 0115 48       		.byte	0x48
+ 372 0116 00       		.byte	0
+ 373 0117 09       		.uleb128 0x9
+ 374 0118 18000000 		.4byte	.LVL3
+ 375 011c 8F020000 		.4byte	0x28f
+ 376 0120 09       		.uleb128 0x9
+ 377 0121 1C000000 		.4byte	.LVL4
+ 378 0125 9A020000 		.4byte	0x29a
+ 379 0129 0A       		.uleb128 0xa
+ 380 012a 32000000 		.4byte	.LVL6
+ 381 012e A5020000 		.4byte	0x2a5
+ 382 0132 51010000 		.4byte	0x151
+ 383 0136 0B       		.uleb128 0xb
+ 384 0137 01       		.uleb128 0x1
+ 385 0138 52       		.byte	0x52
+ 386 0139 02       		.uleb128 0x2
+ 387 013a 08       		.byte	0x8
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 9
+
+
+ 388 013b 5A       		.byte	0x5a
+ 389 013c 0B       		.uleb128 0xb
+ 390 013d 01       		.uleb128 0x1
+ 391 013e 51       		.byte	0x51
+ 392 013f 01       		.uleb128 0x1
+ 393 0140 30       		.byte	0x30
+ 394 0141 0B       		.uleb128 0xb
+ 395 0142 01       		.uleb128 0x1
+ 396 0143 50       		.byte	0x50
+ 397 0144 0B       		.uleb128 0xb
+ 398 0145 74       		.byte	0x74
+ 399 0146 00       		.sleb128 0
+ 400 0147 32       		.byte	0x32
+ 401 0148 24       		.byte	0x24
+ 402 0149 03       		.byte	0x3
+ 403 014a 00000000 		.4byte	.LANCHOR0
+ 404 014e 22       		.byte	0x22
+ 405 014f 06       		.byte	0x6
+ 406 0150 00       		.byte	0
+ 407 0151 0A       		.uleb128 0xa
+ 408 0152 4C000000 		.4byte	.LVL10
+ 409 0156 A5020000 		.4byte	0x2a5
+ 410 015a 79010000 		.4byte	0x179
+ 411 015e 0B       		.uleb128 0xb
+ 412 015f 01       		.uleb128 0x1
+ 413 0160 52       		.byte	0x52
+ 414 0161 02       		.uleb128 0x2
+ 415 0162 08       		.byte	0x8
+ 416 0163 57       		.byte	0x57
+ 417 0164 0B       		.uleb128 0xb
+ 418 0165 01       		.uleb128 0x1
+ 419 0166 51       		.byte	0x51
+ 420 0167 01       		.uleb128 0x1
+ 421 0168 30       		.byte	0x30
+ 422 0169 0B       		.uleb128 0xb
+ 423 016a 01       		.uleb128 0x1
+ 424 016b 50       		.byte	0x50
+ 425 016c 0B       		.uleb128 0xb
+ 426 016d 74       		.byte	0x74
+ 427 016e 00       		.sleb128 0
+ 428 016f 32       		.byte	0x32
+ 429 0170 24       		.byte	0x24
+ 430 0171 03       		.byte	0x3
+ 431 0172 84000000 		.4byte	.LANCHOR1+4
+ 432 0176 22       		.byte	0x22
+ 433 0177 06       		.byte	0x6
+ 434 0178 00       		.byte	0
+ 435 0179 0A       		.uleb128 0xa
+ 436 017a 66000000 		.4byte	.LVL14
+ 437 017e A5020000 		.4byte	0x2a5
+ 438 0182 A1010000 		.4byte	0x1a1
+ 439 0186 0B       		.uleb128 0xb
+ 440 0187 01       		.uleb128 0x1
+ 441 0188 52       		.byte	0x52
+ 442 0189 02       		.uleb128 0x2
+ 443 018a 08       		.byte	0x8
+ 444 018b 48       		.byte	0x48
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 10
+
+
+ 445 018c 0B       		.uleb128 0xb
+ 446 018d 01       		.uleb128 0x1
+ 447 018e 51       		.byte	0x51
+ 448 018f 01       		.uleb128 0x1
+ 449 0190 30       		.byte	0x30
+ 450 0191 0B       		.uleb128 0xb
+ 451 0192 01       		.uleb128 0x1
+ 452 0193 50       		.byte	0x50
+ 453 0194 0B       		.uleb128 0xb
+ 454 0195 74       		.byte	0x74
+ 455 0196 00       		.sleb128 0
+ 456 0197 32       		.byte	0x32
+ 457 0198 24       		.byte	0x24
+ 458 0199 03       		.byte	0x3
+ 459 019a 2C010000 		.4byte	.LANCHOR2+44
+ 460 019e 22       		.byte	0x22
+ 461 019f 06       		.byte	0x6
+ 462 01a0 00       		.byte	0
+ 463 01a1 0A       		.uleb128 0xa
+ 464 01a2 76000000 		.4byte	.LVL16
+ 465 01a6 A5020000 		.4byte	0x2a5
+ 466 01aa BF010000 		.4byte	0x1bf
+ 467 01ae 0B       		.uleb128 0xb
+ 468 01af 01       		.uleb128 0x1
+ 469 01b0 52       		.byte	0x52
+ 470 01b1 01       		.uleb128 0x1
+ 471 01b2 4B       		.byte	0x4b
+ 472 01b3 0B       		.uleb128 0xb
+ 473 01b4 01       		.uleb128 0x1
+ 474 01b5 51       		.byte	0x51
+ 475 01b6 01       		.uleb128 0x1
+ 476 01b7 30       		.byte	0x30
+ 477 01b8 0B       		.uleb128 0xb
+ 478 01b9 01       		.uleb128 0x1
+ 479 01ba 50       		.byte	0x50
+ 480 01bb 02       		.uleb128 0x2
+ 481 01bc 08       		.byte	0x8
+ 482 01bd EF       		.byte	0xef
+ 483 01be 00       		.byte	0
+ 484 01bf 0C       		.uleb128 0xc
+ 485 01c0 7C000000 		.4byte	.LVL17
+ 486 01c4 C0020000 		.4byte	0x2c0
+ 487 01c8 0B       		.uleb128 0xb
+ 488 01c9 01       		.uleb128 0x1
+ 489 01ca 50       		.byte	0x50
+ 490 01cb 01       		.uleb128 0x1
+ 491 01cc 31       		.byte	0x31
+ 492 01cd 00       		.byte	0
+ 493 01ce 00       		.byte	0
+ 494 01cf 0D       		.uleb128 0xd
+ 495 01d0 5D000000 		.4byte	0x5d
+ 496 01d4 DF010000 		.4byte	0x1df
+ 497 01d8 0E       		.uleb128 0xe
+ 498 01d9 98000000 		.4byte	0x98
+ 499 01dd 20       		.byte	0x20
+ 500 01de 00       		.byte	0
+ 501 01df 0F       		.uleb128 0xf
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 11
+
+
+ 502 01e0 5A000000 		.4byte	.LASF17
+ 503 01e4 01       		.byte	0x1
+ 504 01e5 11       		.byte	0x11
+ 505 01e6 F0010000 		.4byte	0x1f0
+ 506 01ea 05       		.uleb128 0x5
+ 507 01eb 03       		.byte	0x3
+ 508 01ec 00000000 		.4byte	stars
+ 509 01f0 10       		.uleb128 0x10
+ 510 01f1 CF010000 		.4byte	0x1cf
+ 511 01f5 0D       		.uleb128 0xd
+ 512 01f6 5D000000 		.4byte	0x5d
+ 513 01fa 05020000 		.4byte	0x205
+ 514 01fe 0E       		.uleb128 0xe
+ 515 01ff 98000000 		.4byte	0x98
+ 516 0203 29       		.byte	0x29
+ 517 0204 00       		.byte	0
+ 518 0205 0F       		.uleb128 0xf
+ 519 0206 15010000 		.4byte	.LASF18
+ 520 020a 01       		.byte	0x1
+ 521 020b 12       		.byte	0x12
+ 522 020c 16020000 		.4byte	0x216
+ 523 0210 05       		.uleb128 0x5
+ 524 0211 03       		.byte	0x3
+ 525 0212 84000000 		.4byte	lightning
+ 526 0216 10       		.uleb128 0x10
+ 527 0217 F5010000 		.4byte	0x1f5
+ 528 021b 0D       		.uleb128 0xd
+ 529 021c 5D000000 		.4byte	0x5d
+ 530 0220 2B020000 		.4byte	0x22b
+ 531 0224 0E       		.uleb128 0xe
+ 532 0225 98000000 		.4byte	0x98
+ 533 0229 02       		.byte	0x2
+ 534 022a 00       		.byte	0
+ 535 022b 0F       		.uleb128 0xf
+ 536 022c 3F000000 		.4byte	.LASF19
+ 537 0230 01       		.byte	0x1
+ 538 0231 13       		.byte	0x13
+ 539 0232 3C020000 		.4byte	0x23c
+ 540 0236 05       		.uleb128 0x5
+ 541 0237 03       		.byte	0x3
+ 542 0238 2C010000 		.4byte	campfire
+ 543 023c 10       		.uleb128 0x10
+ 544 023d 1B020000 		.4byte	0x21b
+ 545 0241 0D       		.uleb128 0xd
+ 546 0242 5D000000 		.4byte	0x5d
+ 547 0246 51020000 		.4byte	0x251
+ 548 024a 0E       		.uleb128 0xe
+ 549 024b 98000000 		.4byte	0x98
+ 550 024f 00       		.byte	0
+ 551 0250 00       		.byte	0
+ 552 0251 11       		.uleb128 0x11
+ 553 0252 0F010000 		.4byte	.LASF20
+ 554 0256 01       		.byte	0x1
+ 555 0257 14       		.byte	0x14
+ 556 0258 61020000 		.4byte	0x261
+ 557 025c 04       		.byte	0x4
+ 558 025d EF       		.byte	0xef
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 12
+
+
+ 559 025e 00       		.byte	0
+ 560 025f 00       		.byte	0
+ 561 0260 00       		.byte	0
+ 562 0261 10       		.uleb128 0x10
+ 563 0262 41020000 		.4byte	0x241
+ 564 0266 12       		.uleb128 0x12
+ 565 0267 60000000 		.4byte	.LASF30
+ 566 026b 03       		.byte	0x3
+ 567 026c 12       		.byte	0x12
+ 568 026d 13       		.uleb128 0x13
+ 569 026e FB010000 		.4byte	.LASF21
+ 570 0272 03       		.byte	0x3
+ 571 0273 20       		.byte	0x20
+ 572 0274 7E020000 		.4byte	0x27e
+ 573 0278 14       		.uleb128 0x14
+ 574 0279 6B000000 		.4byte	0x6b
+ 575 027d 00       		.byte	0
+ 576 027e 13       		.uleb128 0x13
+ 577 027f D1000000 		.4byte	.LASF22
+ 578 0283 03       		.byte	0x3
+ 579 0284 16       		.byte	0x16
+ 580 0285 8F020000 		.4byte	0x28f
+ 581 0289 14       		.uleb128 0x14
+ 582 028a 6B000000 		.4byte	0x6b
+ 583 028e 00       		.byte	0
+ 584 028f 15       		.uleb128 0x15
+ 585 0290 2B020000 		.4byte	.LASF23
+ 586 0294 04       		.byte	0x4
+ 587 0295 7D       		.byte	0x7d
+ 588 0296 5D000000 		.4byte	0x5d
+ 589 029a 15       		.uleb128 0x15
+ 590 029b 3B010000 		.4byte	.LASF24
+ 591 029f 03       		.byte	0x3
+ 592 02a0 18       		.byte	0x18
+ 593 02a1 6B000000 		.4byte	0x6b
+ 594 02a5 13       		.uleb128 0x13
+ 595 02a6 48000000 		.4byte	.LASF25
+ 596 02aa 03       		.byte	0x3
+ 597 02ab 1D       		.byte	0x1d
+ 598 02ac C0020000 		.4byte	0x2c0
+ 599 02b0 14       		.uleb128 0x14
+ 600 02b1 77000000 		.4byte	0x77
+ 601 02b5 14       		.uleb128 0x14
+ 602 02b6 77000000 		.4byte	0x77
+ 603 02ba 14       		.uleb128 0x14
+ 604 02bb 6B000000 		.4byte	0x6b
+ 605 02bf 00       		.byte	0
+ 606 02c0 16       		.uleb128 0x16
+ 607 02c1 17020000 		.4byte	.LASF31
+ 608 02c5 03       		.byte	0x3
+ 609 02c6 17       		.byte	0x17
+ 610 02c7 14       		.uleb128 0x14
+ 611 02c8 6B000000 		.4byte	0x6b
+ 612 02cc 00       		.byte	0
+ 613 02cd 00       		.byte	0
+ 614              		.section	.debug_abbrev,"",%progbits
+ 615              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 13
+
+
+ 616 0000 01       		.uleb128 0x1
+ 617 0001 11       		.uleb128 0x11
+ 618 0002 01       		.byte	0x1
+ 619 0003 25       		.uleb128 0x25
+ 620 0004 0E       		.uleb128 0xe
+ 621 0005 13       		.uleb128 0x13
+ 622 0006 0B       		.uleb128 0xb
+ 623 0007 03       		.uleb128 0x3
+ 624 0008 0E       		.uleb128 0xe
+ 625 0009 1B       		.uleb128 0x1b
+ 626 000a 0E       		.uleb128 0xe
+ 627 000b 55       		.uleb128 0x55
+ 628 000c 17       		.uleb128 0x17
+ 629 000d 11       		.uleb128 0x11
+ 630 000e 01       		.uleb128 0x1
+ 631 000f 10       		.uleb128 0x10
+ 632 0010 17       		.uleb128 0x17
+ 633 0011 00       		.byte	0
+ 634 0012 00       		.byte	0
+ 635 0013 02       		.uleb128 0x2
+ 636 0014 24       		.uleb128 0x24
+ 637 0015 00       		.byte	0
+ 638 0016 0B       		.uleb128 0xb
+ 639 0017 0B       		.uleb128 0xb
+ 640 0018 3E       		.uleb128 0x3e
+ 641 0019 0B       		.uleb128 0xb
+ 642 001a 03       		.uleb128 0x3
+ 643 001b 0E       		.uleb128 0xe
+ 644 001c 00       		.byte	0
+ 645 001d 00       		.byte	0
+ 646 001e 03       		.uleb128 0x3
+ 647 001f 24       		.uleb128 0x24
+ 648 0020 00       		.byte	0
+ 649 0021 0B       		.uleb128 0xb
+ 650 0022 0B       		.uleb128 0xb
+ 651 0023 3E       		.uleb128 0x3e
+ 652 0024 0B       		.uleb128 0xb
+ 653 0025 03       		.uleb128 0x3
+ 654 0026 08       		.uleb128 0x8
+ 655 0027 00       		.byte	0
+ 656 0028 00       		.byte	0
+ 657 0029 04       		.uleb128 0x4
+ 658 002a 16       		.uleb128 0x16
+ 659 002b 00       		.byte	0
+ 660 002c 03       		.uleb128 0x3
+ 661 002d 0E       		.uleb128 0xe
+ 662 002e 3A       		.uleb128 0x3a
+ 663 002f 0B       		.uleb128 0xb
+ 664 0030 3B       		.uleb128 0x3b
+ 665 0031 05       		.uleb128 0x5
+ 666 0032 49       		.uleb128 0x49
+ 667 0033 13       		.uleb128 0x13
+ 668 0034 00       		.byte	0
+ 669 0035 00       		.byte	0
+ 670 0036 05       		.uleb128 0x5
+ 671 0037 2E       		.uleb128 0x2e
+ 672 0038 01       		.byte	0x1
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 14
+
+
+ 673 0039 3F       		.uleb128 0x3f
+ 674 003a 19       		.uleb128 0x19
+ 675 003b 03       		.uleb128 0x3
+ 676 003c 0E       		.uleb128 0xe
+ 677 003d 3A       		.uleb128 0x3a
+ 678 003e 0B       		.uleb128 0xb
+ 679 003f 3B       		.uleb128 0x3b
+ 680 0040 0B       		.uleb128 0xb
+ 681 0041 49       		.uleb128 0x49
+ 682 0042 13       		.uleb128 0x13
+ 683 0043 11       		.uleb128 0x11
+ 684 0044 01       		.uleb128 0x1
+ 685 0045 12       		.uleb128 0x12
+ 686 0046 06       		.uleb128 0x6
+ 687 0047 40       		.uleb128 0x40
+ 688 0048 18       		.uleb128 0x18
+ 689 0049 9742     		.uleb128 0x2117
+ 690 004b 19       		.uleb128 0x19
+ 691 004c 01       		.uleb128 0x1
+ 692 004d 13       		.uleb128 0x13
+ 693 004e 00       		.byte	0
+ 694 004f 00       		.byte	0
+ 695 0050 06       		.uleb128 0x6
+ 696 0051 34       		.uleb128 0x34
+ 697 0052 00       		.byte	0
+ 698 0053 03       		.uleb128 0x3
+ 699 0054 08       		.uleb128 0x8
+ 700 0055 3A       		.uleb128 0x3a
+ 701 0056 0B       		.uleb128 0xb
+ 702 0057 3B       		.uleb128 0x3b
+ 703 0058 0B       		.uleb128 0xb
+ 704 0059 49       		.uleb128 0x49
+ 705 005a 13       		.uleb128 0x13
+ 706 005b 00       		.byte	0
+ 707 005c 00       		.byte	0
+ 708 005d 07       		.uleb128 0x7
+ 709 005e 34       		.uleb128 0x34
+ 710 005f 00       		.byte	0
+ 711 0060 03       		.uleb128 0x3
+ 712 0061 08       		.uleb128 0x8
+ 713 0062 3A       		.uleb128 0x3a
+ 714 0063 0B       		.uleb128 0xb
+ 715 0064 3B       		.uleb128 0x3b
+ 716 0065 0B       		.uleb128 0xb
+ 717 0066 49       		.uleb128 0x49
+ 718 0067 13       		.uleb128 0x13
+ 719 0068 02       		.uleb128 0x2
+ 720 0069 17       		.uleb128 0x17
+ 721 006a 00       		.byte	0
+ 722 006b 00       		.byte	0
+ 723 006c 08       		.uleb128 0x8
+ 724 006d 34       		.uleb128 0x34
+ 725 006e 00       		.byte	0
+ 726 006f 03       		.uleb128 0x3
+ 727 0070 0E       		.uleb128 0xe
+ 728 0071 3A       		.uleb128 0x3a
+ 729 0072 0B       		.uleb128 0xb
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 15
+
+
+ 730 0073 3B       		.uleb128 0x3b
+ 731 0074 0B       		.uleb128 0xb
+ 732 0075 49       		.uleb128 0x49
+ 733 0076 13       		.uleb128 0x13
+ 734 0077 1C       		.uleb128 0x1c
+ 735 0078 0B       		.uleb128 0xb
+ 736 0079 00       		.byte	0
+ 737 007a 00       		.byte	0
+ 738 007b 09       		.uleb128 0x9
+ 739 007c 898201   		.uleb128 0x4109
+ 740 007f 00       		.byte	0
+ 741 0080 11       		.uleb128 0x11
+ 742 0081 01       		.uleb128 0x1
+ 743 0082 31       		.uleb128 0x31
+ 744 0083 13       		.uleb128 0x13
+ 745 0084 00       		.byte	0
+ 746 0085 00       		.byte	0
+ 747 0086 0A       		.uleb128 0xa
+ 748 0087 898201   		.uleb128 0x4109
+ 749 008a 01       		.byte	0x1
+ 750 008b 11       		.uleb128 0x11
+ 751 008c 01       		.uleb128 0x1
+ 752 008d 31       		.uleb128 0x31
+ 753 008e 13       		.uleb128 0x13
+ 754 008f 01       		.uleb128 0x1
+ 755 0090 13       		.uleb128 0x13
+ 756 0091 00       		.byte	0
+ 757 0092 00       		.byte	0
+ 758 0093 0B       		.uleb128 0xb
+ 759 0094 8A8201   		.uleb128 0x410a
+ 760 0097 00       		.byte	0
+ 761 0098 02       		.uleb128 0x2
+ 762 0099 18       		.uleb128 0x18
+ 763 009a 9142     		.uleb128 0x2111
+ 764 009c 18       		.uleb128 0x18
+ 765 009d 00       		.byte	0
+ 766 009e 00       		.byte	0
+ 767 009f 0C       		.uleb128 0xc
+ 768 00a0 898201   		.uleb128 0x4109
+ 769 00a3 01       		.byte	0x1
+ 770 00a4 11       		.uleb128 0x11
+ 771 00a5 01       		.uleb128 0x1
+ 772 00a6 31       		.uleb128 0x31
+ 773 00a7 13       		.uleb128 0x13
+ 774 00a8 00       		.byte	0
+ 775 00a9 00       		.byte	0
+ 776 00aa 0D       		.uleb128 0xd
+ 777 00ab 01       		.uleb128 0x1
+ 778 00ac 01       		.byte	0x1
+ 779 00ad 49       		.uleb128 0x49
+ 780 00ae 13       		.uleb128 0x13
+ 781 00af 01       		.uleb128 0x1
+ 782 00b0 13       		.uleb128 0x13
+ 783 00b1 00       		.byte	0
+ 784 00b2 00       		.byte	0
+ 785 00b3 0E       		.uleb128 0xe
+ 786 00b4 21       		.uleb128 0x21
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 16
+
+
+ 787 00b5 00       		.byte	0
+ 788 00b6 49       		.uleb128 0x49
+ 789 00b7 13       		.uleb128 0x13
+ 790 00b8 2F       		.uleb128 0x2f
+ 791 00b9 0B       		.uleb128 0xb
+ 792 00ba 00       		.byte	0
+ 793 00bb 00       		.byte	0
+ 794 00bc 0F       		.uleb128 0xf
+ 795 00bd 34       		.uleb128 0x34
+ 796 00be 00       		.byte	0
+ 797 00bf 03       		.uleb128 0x3
+ 798 00c0 0E       		.uleb128 0xe
+ 799 00c1 3A       		.uleb128 0x3a
+ 800 00c2 0B       		.uleb128 0xb
+ 801 00c3 3B       		.uleb128 0x3b
+ 802 00c4 0B       		.uleb128 0xb
+ 803 00c5 49       		.uleb128 0x49
+ 804 00c6 13       		.uleb128 0x13
+ 805 00c7 02       		.uleb128 0x2
+ 806 00c8 18       		.uleb128 0x18
+ 807 00c9 00       		.byte	0
+ 808 00ca 00       		.byte	0
+ 809 00cb 10       		.uleb128 0x10
+ 810 00cc 26       		.uleb128 0x26
+ 811 00cd 00       		.byte	0
+ 812 00ce 49       		.uleb128 0x49
+ 813 00cf 13       		.uleb128 0x13
+ 814 00d0 00       		.byte	0
+ 815 00d1 00       		.byte	0
+ 816 00d2 11       		.uleb128 0x11
+ 817 00d3 34       		.uleb128 0x34
+ 818 00d4 00       		.byte	0
+ 819 00d5 03       		.uleb128 0x3
+ 820 00d6 0E       		.uleb128 0xe
+ 821 00d7 3A       		.uleb128 0x3a
+ 822 00d8 0B       		.uleb128 0xb
+ 823 00d9 3B       		.uleb128 0x3b
+ 824 00da 0B       		.uleb128 0xb
+ 825 00db 49       		.uleb128 0x49
+ 826 00dc 13       		.uleb128 0x13
+ 827 00dd 1C       		.uleb128 0x1c
+ 828 00de 0A       		.uleb128 0xa
+ 829 00df 00       		.byte	0
+ 830 00e0 00       		.byte	0
+ 831 00e1 12       		.uleb128 0x12
+ 832 00e2 2E       		.uleb128 0x2e
+ 833 00e3 00       		.byte	0
+ 834 00e4 3F       		.uleb128 0x3f
+ 835 00e5 19       		.uleb128 0x19
+ 836 00e6 03       		.uleb128 0x3
+ 837 00e7 0E       		.uleb128 0xe
+ 838 00e8 3A       		.uleb128 0x3a
+ 839 00e9 0B       		.uleb128 0xb
+ 840 00ea 3B       		.uleb128 0x3b
+ 841 00eb 0B       		.uleb128 0xb
+ 842 00ec 27       		.uleb128 0x27
+ 843 00ed 19       		.uleb128 0x19
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 17
+
+
+ 844 00ee 3C       		.uleb128 0x3c
+ 845 00ef 19       		.uleb128 0x19
+ 846 00f0 00       		.byte	0
+ 847 00f1 00       		.byte	0
+ 848 00f2 13       		.uleb128 0x13
+ 849 00f3 2E       		.uleb128 0x2e
+ 850 00f4 01       		.byte	0x1
+ 851 00f5 3F       		.uleb128 0x3f
+ 852 00f6 19       		.uleb128 0x19
+ 853 00f7 03       		.uleb128 0x3
+ 854 00f8 0E       		.uleb128 0xe
+ 855 00f9 3A       		.uleb128 0x3a
+ 856 00fa 0B       		.uleb128 0xb
+ 857 00fb 3B       		.uleb128 0x3b
+ 858 00fc 0B       		.uleb128 0xb
+ 859 00fd 27       		.uleb128 0x27
+ 860 00fe 19       		.uleb128 0x19
+ 861 00ff 3C       		.uleb128 0x3c
+ 862 0100 19       		.uleb128 0x19
+ 863 0101 01       		.uleb128 0x1
+ 864 0102 13       		.uleb128 0x13
+ 865 0103 00       		.byte	0
+ 866 0104 00       		.byte	0
+ 867 0105 14       		.uleb128 0x14
+ 868 0106 05       		.uleb128 0x5
+ 869 0107 00       		.byte	0
+ 870 0108 49       		.uleb128 0x49
+ 871 0109 13       		.uleb128 0x13
+ 872 010a 00       		.byte	0
+ 873 010b 00       		.byte	0
+ 874 010c 15       		.uleb128 0x15
+ 875 010d 2E       		.uleb128 0x2e
+ 876 010e 00       		.byte	0
+ 877 010f 3F       		.uleb128 0x3f
+ 878 0110 19       		.uleb128 0x19
+ 879 0111 03       		.uleb128 0x3
+ 880 0112 0E       		.uleb128 0xe
+ 881 0113 3A       		.uleb128 0x3a
+ 882 0114 0B       		.uleb128 0xb
+ 883 0115 3B       		.uleb128 0x3b
+ 884 0116 0B       		.uleb128 0xb
+ 885 0117 27       		.uleb128 0x27
+ 886 0118 19       		.uleb128 0x19
+ 887 0119 49       		.uleb128 0x49
+ 888 011a 13       		.uleb128 0x13
+ 889 011b 3C       		.uleb128 0x3c
+ 890 011c 19       		.uleb128 0x19
+ 891 011d 00       		.byte	0
+ 892 011e 00       		.byte	0
+ 893 011f 16       		.uleb128 0x16
+ 894 0120 2E       		.uleb128 0x2e
+ 895 0121 01       		.byte	0x1
+ 896 0122 3F       		.uleb128 0x3f
+ 897 0123 19       		.uleb128 0x19
+ 898 0124 03       		.uleb128 0x3
+ 899 0125 0E       		.uleb128 0xe
+ 900 0126 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 18
+
+
+ 901 0127 0B       		.uleb128 0xb
+ 902 0128 3B       		.uleb128 0x3b
+ 903 0129 0B       		.uleb128 0xb
+ 904 012a 27       		.uleb128 0x27
+ 905 012b 19       		.uleb128 0x19
+ 906 012c 3C       		.uleb128 0x3c
+ 907 012d 19       		.uleb128 0x19
+ 908 012e 00       		.byte	0
+ 909 012f 00       		.byte	0
+ 910 0130 00       		.byte	0
+ 911              		.section	.debug_loc,"",%progbits
+ 912              	.Ldebug_loc0:
+ 913              	.LLST0:
+ 914 0000 24000000 		.4byte	.LVL5
+ 915 0004 3A000000 		.4byte	.LVL8
+ 916 0008 0100     		.2byte	0x1
+ 917 000a 54       		.byte	0x54
+ 918 000b 3C000000 		.4byte	.LVL9
+ 919 000f 54000000 		.4byte	.LVL12
+ 920 0013 0100     		.2byte	0x1
+ 921 0015 54       		.byte	0x54
+ 922 0016 56000000 		.4byte	.LVL13
+ 923 001a 8C000000 		.4byte	.LFE34
+ 924 001e 0100     		.2byte	0x1
+ 925 0020 54       		.byte	0x54
+ 926 0021 00000000 		.4byte	0
+ 927 0025 00000000 		.4byte	0
+ 928              		.section	.debug_aranges,"",%progbits
+ 929 0000 1C000000 		.4byte	0x1c
+ 930 0004 0200     		.2byte	0x2
+ 931 0006 00000000 		.4byte	.Ldebug_info0
+ 932 000a 04       		.byte	0x4
+ 933 000b 00       		.byte	0
+ 934 000c 0000     		.2byte	0
+ 935 000e 0000     		.2byte	0
+ 936 0010 00000000 		.4byte	.LFB34
+ 937 0014 8C000000 		.4byte	.LFE34-.LFB34
+ 938 0018 00000000 		.4byte	0
+ 939 001c 00000000 		.4byte	0
+ 940              		.section	.debug_ranges,"",%progbits
+ 941              	.Ldebug_ranges0:
+ 942 0000 00000000 		.4byte	.LFB34
+ 943 0004 8C000000 		.4byte	.LFE34
+ 944 0008 00000000 		.4byte	0
+ 945 000c 00000000 		.4byte	0
+ 946              		.section	.debug_line,"",%progbits
+ 947              	.Ldebug_line0:
+ 948 0000 21010000 		.section	.debug_str,"MS",%progbits,1
+ 948      0200C800 
+ 948      00000201 
+ 948      FB0E0D00 
+ 948      01010101 
+ 949              	.LASF28:
+ 950 0000 463A5C44 		.ascii	"F:\\Downloads\\FunWithLEDs\\FunWithLEDs\\EndOfTheAn"
+ 950      6F776E6C 
+ 950      6F616473 
+ 950      5C46756E 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 19
+
+
+ 950      57697468 
+ 951 002f 616C6F67 		.ascii	"alogTrail.cydsn\000"
+ 951      54726169 
+ 951      6C2E6379 
+ 951      64736E00 
+ 952              	.LASF19:
+ 953 003f 63616D70 		.ascii	"campfire\000"
+ 953      66697265 
+ 953      00
+ 954              	.LASF25:
+ 955 0048 53747269 		.ascii	"StripLights_Pixel\000"
+ 955      704C6967 
+ 955      6874735F 
+ 955      50697865 
+ 955      6C00
+ 956              	.LASF17:
+ 957 005a 73746172 		.ascii	"stars\000"
+ 957      7300
+ 958              	.LASF30:
+ 959 0060 53747269 		.ascii	"StripLights_Start\000"
+ 959      704C6967 
+ 959      6874735F 
+ 959      53746172 
+ 959      7400
+ 960              	.LASF3:
+ 961 0072 73686F72 		.ascii	"short unsigned int\000"
+ 961      7420756E 
+ 961      7369676E 
+ 961      65642069 
+ 961      6E7400
+ 962              	.LASF11:
+ 963 0085 666C6F61 		.ascii	"float\000"
+ 963      7400
+ 964              	.LASF7:
+ 965 008b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 965      206C6F6E 
+ 965      6720756E 
+ 965      7369676E 
+ 965      65642069 
+ 966              	.LASF1:
+ 967 00a2 756E7369 		.ascii	"unsigned char\000"
+ 967      676E6564 
+ 967      20636861 
+ 967      7200
+ 968              	.LASF5:
+ 969 00b0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 969      20756E73 
+ 969      69676E65 
+ 969      6420696E 
+ 969      7400
+ 970              	.LASF10:
+ 971 00c2 696E7433 		.ascii	"int32\000"
+ 971      3200
+ 972              	.LASF15:
+ 973 00c8 73746172 		.ascii	"starsLen\000"
+ 973      734C656E 
+ 973      00
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 20
+
+
+ 974              	.LASF22:
+ 975 00d1 53747269 		.ascii	"StripLights_MemClear\000"
+ 975      704C6967 
+ 975      6874735F 
+ 975      4D656D43 
+ 975      6C656172 
+ 976              	.LASF12:
+ 977 00e6 646F7562 		.ascii	"double\000"
+ 977      6C6500
+ 978              	.LASF27:
+ 979 00ed 2E5C6D61 		.ascii	".\\main.c\000"
+ 979      696E2E63 
+ 979      00
+ 980              	.LASF9:
+ 981 00f6 75696E74 		.ascii	"uint32\000"
+ 981      333200
+ 982              	.LASF29:
+ 983 00fd 6D61696E 		.ascii	"main\000"
+ 983      00
+ 984              	.LASF8:
+ 985 0102 756E7369 		.ascii	"unsigned int\000"
+ 985      676E6564 
+ 985      20696E74 
+ 985      00
+ 986              	.LASF20:
+ 987 010f 70686F6E 		.ascii	"phone\000"
+ 987      6500
+ 988              	.LASF18:
+ 989 0115 6C696768 		.ascii	"lightning\000"
+ 989      746E696E 
+ 989      6700
+ 990              	.LASF14:
+ 991 011f 73697A65 		.ascii	"sizetype\000"
+ 991      74797065 
+ 991      00
+ 992              	.LASF6:
+ 993 0128 6C6F6E67 		.ascii	"long long int\000"
+ 993      206C6F6E 
+ 993      6720696E 
+ 993      7400
+ 994              	.LASF13:
+ 995 0136 63686172 		.ascii	"char\000"
+ 995      00
+ 996              	.LASF24:
+ 997 013b 53747269 		.ascii	"StripLights_Ready\000"
+ 997      704C6967 
+ 997      6874735F 
+ 997      52656164 
+ 997      7900
+ 998              	.LASF26:
+ 999 014d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 999      4320342E 
+ 999      392E3320 
+ 999      32303135 
+ 999      30333033 
+ 1000 0180 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1000      20726576 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccH4brW4.s 			page 21
+
+
+ 1000      6973696F 
+ 1000      6E203232 
+ 1000      31323230 
+ 1001 01b3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1001      66756E63 
+ 1001      74696F6E 
+ 1001      2D736563 
+ 1001      74696F6E 
+ 1002              	.LASF16:
+ 1003 01db 6C696768 		.ascii	"lightningLen\000"
+ 1003      746E696E 
+ 1003      674C656E 
+ 1003      00
+ 1004              	.LASF2:
+ 1005 01e8 73686F72 		.ascii	"short int\000"
+ 1005      7420696E 
+ 1005      7400
+ 1006              	.LASF4:
+ 1007 01f2 6C6F6E67 		.ascii	"long int\000"
+ 1007      20696E74 
+ 1007      00
+ 1008              	.LASF21:
+ 1009 01fb 53747269 		.ascii	"StripLights_Dim\000"
+ 1009      704C6967 
+ 1009      6874735F 
+ 1009      44696D00 
+ 1010              	.LASF0:
+ 1011 020b 7369676E 		.ascii	"signed char\000"
+ 1011      65642063 
+ 1011      68617200 
+ 1012              	.LASF31:
+ 1013 0217 53747269 		.ascii	"StripLights_Trigger\000"
+ 1013      704C6967 
+ 1013      6874735F 
+ 1013      54726967 
+ 1013      67657200 
+ 1014              	.LASF23:
+ 1015 022b 72616E64 		.ascii	"rand\000"
+ 1015      00
+ 1016              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
