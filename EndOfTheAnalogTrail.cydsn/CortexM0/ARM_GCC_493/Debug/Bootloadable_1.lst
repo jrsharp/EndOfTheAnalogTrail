@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
   30:.\Generated_Source\PSoC4/Bootloadable_1.c **** ****************************************************************************//**
   31:.\Generated_Source\PSoC4/Bootloadable_1.c **** *
   32:.\Generated_Source\PSoC4/Bootloadable_1.c **** * \brief
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 2
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/Bootloadable_1.c **** *  Schedules the Bootloader/Launcher to be launched and then performs
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
   56:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   NOTE Intended for the combination project type ONLY!
   57:.\Generated_Source\PSoC4/Bootloadable_1.c **** *
   58:.\Generated_Source\PSoC4/Bootloadable_1.c **** * \return 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 3
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 3
 
 
   59:.\Generated_Source\PSoC4/Bootloadable_1.c **** *  A number of the current active application set in the metadata section.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  113:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   NOTE Possible values are:
  114:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   0 - for the first application
  115:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   1 - for the second application.
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 4
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 4
 
 
  116:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   Any other number is considered invalid. 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  170:.\Generated_Source\PSoC4/Bootloadable_1.c **** *
  171:.\Generated_Source\PSoC4/Bootloadable_1.c **** * \param inputValue 
  172:.\Generated_Source\PSoC4/Bootloadable_1.c **** *   One-byte data.
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 5
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 5
 
 
  173:.\Generated_Source\PSoC4/Bootloadable_1.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  227:.\Generated_Source\PSoC4/Bootloadable_1.c **** *******************************************************************************/
  228:.\Generated_Source\PSoC4/Bootloadable_1.c **** void Bootloadable_1_SetFlashByte(uint32 address, uint8 runType) 
  229:.\Generated_Source\PSoC4/Bootloadable_1.c **** {
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 6
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 6
 
 
   57              		.loc 1 229 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
   90 001a 9BB2     		uxth	r3, r3
   91              	.LVL7:
   92              	.L5:
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 7
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 7
 
 
  247:.\Generated_Source\PSoC4/Bootloadable_1.c ****     {
@@ -418,50 +418,50 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  127 0000 AF010000 		.4byte	0x1af
  128 0004 0400     		.2byte	0x4
  129 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 8
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 8
 
 
  130 000a 04       		.byte	0x4
  131 000b 01       		.uleb128 0x1
- 132 000c 5C010000 		.4byte	.LASF24
+ 132 000c 70010000 		.4byte	.LASF24
  133 0010 01       		.byte	0x1
- 134 0011 8D000000 		.4byte	.LASF25
- 135 0015 00000000 		.4byte	.LASF26
+ 134 0011 4E000000 		.4byte	.LASF25
+ 135 0015 78000000 		.4byte	.LASF26
  136 0019 00000000 		.4byte	.Ldebug_ranges0+0
  137 001d 00000000 		.4byte	0
  138 0021 00000000 		.4byte	.Ldebug_line0
  139 0025 02       		.uleb128 0x2
  140 0026 01       		.byte	0x1
  141 0027 06       		.byte	0x6
- 142 0028 0D020000 		.4byte	.LASF0
+ 142 0028 21020000 		.4byte	.LASF0
  143 002c 02       		.uleb128 0x2
  144 002d 01       		.byte	0x1
  145 002e 08       		.byte	0x8
- 146 002f 5F000000 		.4byte	.LASF1
+ 146 002f 20000000 		.4byte	.LASF1
  147 0033 02       		.uleb128 0x2
  148 0034 02       		.byte	0x2
  149 0035 05       		.byte	0x5
- 150 0036 EA010000 		.4byte	.LASF2
+ 150 0036 FE010000 		.4byte	.LASF2
  151 003a 02       		.uleb128 0x2
  152 003b 02       		.byte	0x2
  153 003c 07       		.byte	0x7
- 154 003d 46000000 		.4byte	.LASF3
+ 154 003d 07000000 		.4byte	.LASF3
  155 0041 02       		.uleb128 0x2
  156 0042 04       		.byte	0x4
  157 0043 05       		.byte	0x5
- 158 0044 04020000 		.4byte	.LASF4
+ 158 0044 18020000 		.4byte	.LASF4
  159 0048 02       		.uleb128 0x2
  160 0049 04       		.byte	0x4
  161 004a 07       		.byte	0x7
- 162 004b 75000000 		.4byte	.LASF5
+ 162 004b 36000000 		.4byte	.LASF5
  163 004f 02       		.uleb128 0x2
  164 0050 08       		.byte	0x8
  165 0051 05       		.byte	0x5
- 166 0052 49010000 		.4byte	.LASF6
+ 166 0052 5D010000 		.4byte	.LASF6
  167 0056 02       		.uleb128 0x2
  168 0057 08       		.byte	0x8
  169 0058 07       		.byte	0x7
- 170 0059 18010000 		.4byte	.LASF7
+ 170 0059 2C010000 		.4byte	.LASF7
  171 005d 03       		.uleb128 0x3
  172 005e 04       		.byte	0x4
  173 005f 05       		.byte	0x5
@@ -469,45 +469,45 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  175 0064 02       		.uleb128 0x2
  176 0065 04       		.byte	0x4
  177 0066 07       		.byte	0x7
- 178 0067 E7000000 		.4byte	.LASF8
+ 178 0067 FB000000 		.4byte	.LASF8
  179 006b 04       		.uleb128 0x4
- 180 006c 87000000 		.4byte	.LASF9
+ 180 006c 48000000 		.4byte	.LASF9
  181 0070 02       		.byte	0x2
  182 0071 3801     		.2byte	0x138
  183 0073 2C000000 		.4byte	0x2c
  184 0077 04       		.uleb128 0x4
- 185 0078 D9000000 		.4byte	.LASF10
+ 185 0078 ED000000 		.4byte	.LASF10
  186 007c 02       		.byte	0x2
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 9
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 9
 
 
  187 007d 3901     		.2byte	0x139
  188 007f 3A000000 		.4byte	0x3a
  189 0083 04       		.uleb128 0x4
- 190 0084 E0000000 		.4byte	.LASF11
+ 190 0084 F4000000 		.4byte	.LASF11
  191 0088 02       		.byte	0x2
  192 0089 3A01     		.2byte	0x13a
  193 008b 48000000 		.4byte	0x48
  194 008f 02       		.uleb128 0x2
  195 0090 04       		.byte	0x4
  196 0091 04       		.byte	0x4
- 197 0092 59000000 		.4byte	.LASF12
+ 197 0092 1A000000 		.4byte	.LASF12
  198 0096 02       		.uleb128 0x2
  199 0097 08       		.byte	0x8
  200 0098 04       		.byte	0x4
- 201 0099 B7000000 		.4byte	.LASF13
+ 201 0099 CB000000 		.4byte	.LASF13
  202 009d 02       		.uleb128 0x2
  203 009e 01       		.byte	0x1
  204 009f 08       		.byte	0x8
- 205 00a0 57010000 		.4byte	.LASF14
+ 205 00a0 6B010000 		.4byte	.LASF14
  206 00a4 05       		.uleb128 0x5
  207 00a5 83000000 		.4byte	0x83
  208 00a9 02       		.uleb128 0x2
  209 00aa 04       		.byte	0x4
  210 00ab 07       		.byte	0x7
- 211 00ac 40010000 		.4byte	.LASF15
+ 211 00ac 54010000 		.4byte	.LASF15
  212 00b0 06       		.uleb128 0x6
- 213 00b1 28020000 		.4byte	.LASF16
+ 213 00b1 3C020000 		.4byte	.LASF16
  214 00b5 01       		.byte	0x1
  215 00b6 29       		.byte	0x29
  216 00b7 00000000 		.4byte	.LFB0
@@ -520,7 +520,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  223 00ca 86010000 		.4byte	0x186
  224 00ce 00       		.byte	0
  225 00cf 06       		.uleb128 0x6
- 226 00d0 F4000000 		.4byte	.LASF17
+ 226 00d0 08010000 		.4byte	.LASF17
  227 00d4 01       		.byte	0x1
  228 00d5 E4       		.byte	0xe4
  229 00d6 00000000 		.4byte	.LFB1
@@ -529,28 +529,28 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  232 00df 9C       		.byte	0x9c
  233 00e0 6B010000 		.4byte	0x16b
  234 00e4 08       		.uleb128 0x8
- 235 00e5 10010000 		.4byte	.LASF18
+ 235 00e5 24010000 		.4byte	.LASF18
  236 00e9 01       		.byte	0x1
  237 00ea E4       		.byte	0xe4
  238 00eb 83000000 		.4byte	0x83
  239 00ef 00000000 		.4byte	.LLST0
  240 00f3 08       		.uleb128 0x8
- 241 00f4 2F010000 		.4byte	.LASF19
+ 241 00f4 43010000 		.4byte	.LASF19
  242 00f8 01       		.byte	0x1
  243 00f9 E4       		.byte	0xe4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 10
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 10
 
 
  244 00fa 6B000000 		.4byte	0x6b
  245 00fe 2C000000 		.4byte	.LLST1
  246 0102 09       		.uleb128 0x9
- 247 0103 D1000000 		.4byte	.LASF20
+ 247 0103 E5000000 		.4byte	.LASF20
  248 0107 01       		.byte	0x1
  249 0108 E6       		.byte	0xe6
  250 0109 83000000 		.4byte	0x83
  251 010d 5C000000 		.4byte	.LLST2
  252 0111 0A       		.uleb128 0xa
- 253 0112 6D000000 		.4byte	.LASF21
+ 253 0112 2E000000 		.4byte	.LASF21
  254 0116 01       		.byte	0x1
  255 0117 E7       		.byte	0xe7
  256 0118 6B010000 		.4byte	0x16b
@@ -558,13 +558,13 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  258 011d 91       		.byte	0x91
  259 011e F07E     		.sleb128 -144
  260 0120 09       		.uleb128 0x9
- 261 0121 3F000000 		.4byte	.LASF22
+ 261 0121 00000000 		.4byte	.LASF22
  262 0125 01       		.byte	0x1
  263 0126 EE       		.byte	0xee
  264 0127 77000000 		.4byte	0x77
  265 012b 88000000 		.4byte	.LLST3
  266 012f 09       		.uleb128 0x9
- 267 0130 37010000 		.4byte	.LASF23
+ 267 0130 4B010000 		.4byte	.LASF23
  268 0134 01       		.byte	0x1
  269 0135 F3       		.byte	0xf3
  270 0136 83000000 		.4byte	0x83
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  298 0167 40       		.byte	0x40
  299 0168 25       		.byte	0x25
  300 0169 00       		.byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 11
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 11
 
 
  301 016a 00       		.byte	0
@@ -610,16 +610,16 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  307 0179 7F       		.byte	0x7f
  308 017a 00       		.byte	0
  309 017b 10       		.uleb128 0x10
- 310 017c 19020000 		.4byte	.LASF27
+ 310 017c 2D020000 		.4byte	.LASF27
  311 0180 03       		.byte	0x3
  312 0181 38       		.byte	0x38
  313 0182 A4000000 		.4byte	0xa4
  314 0186 11       		.uleb128 0x11
- 315 0187 F4010000 		.4byte	.LASF28
+ 315 0187 08020000 		.4byte	.LASF28
  316 018b 04       		.byte	0x4
  317 018c 60       		.byte	0x60
  318 018d 12       		.uleb128 0x12
- 319 018e BE000000 		.4byte	.LASF29
+ 319 018e D2000000 		.4byte	.LASF29
  320 0192 05       		.byte	0x5
  321 0193 1C       		.byte	0x1c
  322 0194 83000000 		.4byte	0x83
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  355 0012 00       		.byte	0
  356 0013 02       		.uleb128 0x2
  357 0014 24       		.uleb128 0x24
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 12
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 12
 
 
  358 0015 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  412 004b 01       		.uleb128 0x1
  413 004c 12       		.uleb128 0x12
  414 004d 06       		.uleb128 0x6
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 13
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 13
 
 
  415 004e 40       		.uleb128 0x40
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  469 0087 3B       		.uleb128 0x3b
  470 0088 0B       		.uleb128 0xb
  471 0089 49       		.uleb128 0x49
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 14
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 14
 
 
  472 008a 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  526 00c5 00       		.byte	0
  527 00c6 00       		.byte	0
  528 00c7 10       		.uleb128 0x10
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 15
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 15
 
 
  529 00c8 34       		.uleb128 0x34
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  583 00fe 13       		.uleb128 0x13
  584 00ff 05       		.uleb128 0x5
  585 0100 00       		.byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 16
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 16
 
 
  586 0101 49       		.uleb128 0x49
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  640 0046 31000000 		.4byte	.LVL12-1
  641 004a 36000000 		.4byte	.LFE1
  642 004e 0400     		.2byte	0x4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 17
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 17
 
 
  643 0050 F3       		.byte	0xf3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  697 00c6 9F       		.byte	0x9f
  698 00c7 00000000 		.4byte	0
  699 00cb 00000000 		.4byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 18
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 18
 
 
  700              	.LLST5:
@@ -1066,157 +1066,158 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 1
  740      00000201 
  740      FB0E0D00 
  740      01010101 
- 741              	.LASF26:
- 742 0000 463A5C44 		.ascii	"F:\\Downloads\\FunWithLEDs\\FunWithLEDs\\EndOfTheAn"
- 742      6F776E6C 
- 742      6F616473 
- 742      5C46756E 
- 742      57697468 
- 743 002f 616C6F67 		.ascii	"alogTrail.cydsn\000"
- 743      54726169 
- 743      6C2E6379 
- 743      64736E00 
- 744              	.LASF22:
- 745 003f 726F774E 		.ascii	"rowNum\000"
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 19
+ 741              	.LASF22:
+ 742 0000 726F774E 		.ascii	"rowNum\000"
+ 742      756D00
+ 743              	.LASF3:
+ 744 0007 73686F72 		.ascii	"short unsigned int\000"
+ 744      7420756E 
+ 744      7369676E 
+ 744      65642069 
+ 744      6E7400
+ 745              	.LASF12:
+ 746 001a 666C6F61 		.ascii	"float\000"
+ 746      7400
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 19
 
 
- 745      756D00
- 746              	.LASF3:
- 747 0046 73686F72 		.ascii	"short unsigned int\000"
- 747      7420756E 
- 747      7369676E 
- 747      65642069 
- 747      6E7400
- 748              	.LASF12:
- 749 0059 666C6F61 		.ascii	"float\000"
- 749      7400
- 750              	.LASF1:
- 751 005f 756E7369 		.ascii	"unsigned char\000"
- 751      676E6564 
- 751      20636861 
- 751      7200
- 752              	.LASF21:
- 753 006d 726F7744 		.ascii	"rowData\000"
- 753      61746100 
- 754              	.LASF5:
- 755 0075 6C6F6E67 		.ascii	"long unsigned int\000"
- 755      20756E73 
- 755      69676E65 
- 755      6420696E 
- 755      7400
- 756              	.LASF9:
- 757 0087 75696E74 		.ascii	"uint8\000"
- 757      3800
- 758              	.LASF25:
- 759 008d 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Bootloadable_1.c\000"
- 759      6E657261 
- 759      7465645F 
- 759      536F7572 
- 759      63655C50 
+ 747              	.LASF1:
+ 748 0020 756E7369 		.ascii	"unsigned char\000"
+ 748      676E6564 
+ 748      20636861 
+ 748      7200
+ 749              	.LASF21:
+ 750 002e 726F7744 		.ascii	"rowData\000"
+ 750      61746100 
+ 751              	.LASF5:
+ 752 0036 6C6F6E67 		.ascii	"long unsigned int\000"
+ 752      20756E73 
+ 752      69676E65 
+ 752      6420696E 
+ 752      7400
+ 753              	.LASF9:
+ 754 0048 75696E74 		.ascii	"uint8\000"
+ 754      3800
+ 755              	.LASF25:
+ 756 004e 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Bootloadable_1.c\000"
+ 756      6E657261 
+ 756      7465645F 
+ 756      536F7572 
+ 756      63655C50 
+ 757              	.LASF26:
+ 758 0078 463A5C44 		.ascii	"F:\\Downloads\\FunWithLEDs\\FunWithLEDs\\EndOfTheAn"
+ 758      6F776E6C 
+ 758      6F616473 
+ 758      5C46756E 
+ 758      57697468 
+ 759 00a7 616C6F67 		.ascii	"alogTrail\\EndOfTheAnalogTrail.cydsn\000"
+ 759      54726169 
+ 759      6C5C456E 
+ 759      644F6654 
+ 759      6865416E 
  760              	.LASF13:
- 761 00b7 646F7562 		.ascii	"double\000"
+ 761 00cb 646F7562 		.ascii	"double\000"
  761      6C6500
  762              	.LASF29:
- 763 00be 43795379 		.ascii	"CySysFlashWriteRow\000"
+ 763 00d2 43795379 		.ascii	"CySysFlashWriteRow\000"
  763      73466C61 
  763      73685772 
  763      69746552 
  763      6F7700
  764              	.LASF20:
- 765 00d1 666C7341 		.ascii	"flsAddr\000"
+ 765 00e5 666C7341 		.ascii	"flsAddr\000"
  765      64647200 
  766              	.LASF10:
- 767 00d9 75696E74 		.ascii	"uint16\000"
+ 767 00ed 75696E74 		.ascii	"uint16\000"
  767      313600
  768              	.LASF11:
- 769 00e0 75696E74 		.ascii	"uint32\000"
+ 769 00f4 75696E74 		.ascii	"uint32\000"
  769      333200
  770              	.LASF8:
- 771 00e7 756E7369 		.ascii	"unsigned int\000"
+ 771 00fb 756E7369 		.ascii	"unsigned int\000"
  771      676E6564 
  771      20696E74 
  771      00
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 20
+
+
  772              	.LASF17:
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 20
-
-
- 773 00f4 426F6F74 		.ascii	"Bootloadable_1_SetFlashByte\000"
+ 773 0108 426F6F74 		.ascii	"Bootloadable_1_SetFlashByte\000"
  773      6C6F6164 
  773      61626C65 
  773      5F315F53 
  773      6574466C 
  774              	.LASF18:
- 775 0110 61646472 		.ascii	"address\000"
+ 775 0124 61646472 		.ascii	"address\000"
  775      65737300 
  776              	.LASF7:
- 777 0118 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 777 012c 6C6F6E67 		.ascii	"long long unsigned int\000"
  777      206C6F6E 
  777      6720756E 
  777      7369676E 
  777      65642069 
  778              	.LASF19:
- 779 012f 72756E54 		.ascii	"runType\000"
+ 779 0143 72756E54 		.ascii	"runType\000"
  779      79706500 
  780              	.LASF23:
- 781 0137 62617365 		.ascii	"baseAddr\000"
+ 781 014b 62617365 		.ascii	"baseAddr\000"
  781      41646472 
  781      00
  782              	.LASF15:
- 783 0140 73697A65 		.ascii	"sizetype\000"
+ 783 0154 73697A65 		.ascii	"sizetype\000"
  783      74797065 
  783      00
  784              	.LASF6:
- 785 0149 6C6F6E67 		.ascii	"long long int\000"
+ 785 015d 6C6F6E67 		.ascii	"long long int\000"
  785      206C6F6E 
  785      6720696E 
  785      7400
  786              	.LASF14:
- 787 0157 63686172 		.ascii	"char\000"
+ 787 016b 63686172 		.ascii	"char\000"
  787      00
  788              	.LASF24:
- 789 015c 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 789 0170 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  789      4320342E 
  789      392E3320 
  789      32303135 
  789      30333033 
- 790 018f 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 790 01a3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  790      20726576 
  790      6973696F 
  790      6E203232 
  790      31323230 
- 791 01c2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 791 01d6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  791      66756E63 
  791      74696F6E 
  791      2D736563 
  791      74696F6E 
  792              	.LASF2:
- 793 01ea 73686F72 		.ascii	"short int\000"
+ 793 01fe 73686F72 		.ascii	"short int\000"
  793      7420696E 
  793      7400
  794              	.LASF28:
- 795 01f4 4379536F 		.ascii	"CySoftwareReset\000"
+ 795 0208 4379536F 		.ascii	"CySoftwareReset\000"
  795      66747761 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cclWkU6k.s 			page 21
+
+
  795      72655265 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccGlrAKf.s 			page 21
-
-
  795      73657400 
  796              	.LASF4:
- 797 0204 6C6F6E67 		.ascii	"long int\000"
+ 797 0218 6C6F6E67 		.ascii	"long int\000"
  797      20696E74 
  797      00
  798              	.LASF0:
- 799 020d 7369676E 		.ascii	"signed char\000"
+ 799 0221 7369676E 		.ascii	"signed char\000"
  799      65642063 
  799      68617200 
  800              	.LASF27:
- 801 0219 63794274 		.ascii	"cyBtldrRunType\000"
+ 801 022d 63794274 		.ascii	"cyBtldrRunType\000"
  801      6C647252 
  801      756E5479 
  801      706500
  802              	.LASF16:
- 803 0228 426F6F74 		.ascii	"Bootloadable_1_Load\000"
+ 803 023c 426F6F74 		.ascii	"Bootloadable_1_Load\000"
  803      6C6F6164 
  803      61626C65 
  803      5F315F4C 

@@ -1,4 +1,4 @@
-F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail.cydsn\TopDesign\TopDesign.cysch
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\EndOfTheAnalogTrail.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Bootloadable_v1_50.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Bootloadable_v1_50.cystate
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Bootloadable_v1_50.pdf
@@ -16,13 +16,13 @@ C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomp
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Custom\cygeneralpage.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Custom\Properties\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bootloadable_v1_50\Custom\cydependenciespage.resx
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\StripLights_v2_2.cysym
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\StripLights.pdf
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\API\SLights.c
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\API\SLights.h
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\API\fonts.c
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\API\fonts.h
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\StripLights_v2_2\PSoC4\StripLights_v2_2.cysch
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\StripLights_v2_2.cysym
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\StripLights.pdf
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\API\SLights.c
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\API\SLights.h
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\API\fonts.c
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\API\fonts.h
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\StripLights_v2_2\PSoC4\StripLights_v2_2.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v
@@ -67,9 +67,9 @@ C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprim
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\Custom\Resources.Designer.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\Custom\cybitfieldcontrol.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_70\Custom\Resources.resx
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.cysym
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v
-F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\WS2812String_v1_0\WS2812String_v1_0.cysym
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.cysym
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\WS2812String_v1_0\WS2812String_v1_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_5\cy_pins_v2_5.cyprimitive
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_5\cy_pins_v2_5.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_5\cy_pins_v2_5.pdf
@@ -160,7 +160,7 @@ C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\defaul
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\SwitchSPST_v1_0\SwitchSPST_v1_0.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\Gnd_v1_0\Gnd_v1_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\Gnd_v1_0\Gnd_v1_0.pdf
-F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail.cydsn\EndOfTheAnalogTrail.cydwr
+F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\EndOfTheAnalogTrail.cydsn\EndOfTheAnalogTrail.cydwr
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\cm0gcc.ld
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\Cm0RealView.scat
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\Cm0Start.c

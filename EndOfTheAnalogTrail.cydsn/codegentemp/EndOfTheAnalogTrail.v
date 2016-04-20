@@ -1,6 +1,6 @@
 // ======================================================================
 // EndOfTheAnalogTrail.v generated from TopDesign.cysch
-// 04/06/2016 at 22:56
+// 04/19/2016 at 22:56
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -130,14 +130,14 @@
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3"
-`include "F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v"
+`define CY_BLK_DIR "F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3"
+`include "F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v"
 `else
-`define CY_BLK_DIR "F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3"
-`include "F:\Downloads\FunWithLEDs\FunWithLEDs\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v"
+`define CY_BLK_DIR "F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3"
+`include "F:\Downloads\FunWithLEDs\FunWithLEDs\EndOfTheAnalogTrail\StripLightLib.cylib\B_WS2811_v1_3\B_WS2811_v1_3.v"
 `endif
 
-// StripLights_v2_2(Channels=1, ClockSpeedKhz=800, Display_Memory=1, LEDs_per_Strip=240, Speed=1, Transfer_Method=1, WS281x_Type=2, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=StripLights_v2_2, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=StripLights, CY_INSTANCE_SHORT_NAME=StripLights, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=2, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP2, INSTANCE_NAME=StripLights, )
+// StripLights_v2_2(Channels=1, ClockSpeedKhz=800, Display_Memory=0, LEDs_per_Strip=234, Speed=1, Transfer_Method=1, WS281x_Type=2, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=StripLights_v2_2, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=StripLights, CY_INSTANCE_SHORT_NAME=StripLights, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=2, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP2, INSTANCE_NAME=StripLights, )
 module StripLights_v2_2_0 (
     rdy,
     S0,

@@ -1,8 +1,8 @@
-F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o : F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
+F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o : F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
 
-F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
 
-F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
+F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
 
-F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
+F:/Downloads/FunWithLEDs/FunWithLEDs/EndOfTheAnalogTrail/EndOfTheAnalogTrail.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
 

@@ -2,7 +2,7 @@
 --	Conversion of EndOfTheAnalogTrail.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Apr 06 22:56:16 2016
+--	Tue Apr 19 22:56:47 2016
 --
 
 USE cypress.cypress.all;

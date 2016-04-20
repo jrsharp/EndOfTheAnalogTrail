@@ -49,7 +49,7 @@ Allocating common symbols
 Common symbol       size              file
 
 StripLights_ledArray
-                    0xf0              .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                    0x3a8             .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
 errno               0x4               c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
 StripLights_fontX   0x4               .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
 StripLights_DimMask
@@ -134,7 +134,6 @@ Discarded input sections
                 0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
  .text.CySoftwareReset
                 0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .text.CyDelay  0x00000000       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
  .text.CySysLvdEnable
                 0x00000000       0x44 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
  .text.CyDelayFreq
@@ -232,7 +231,7 @@ Discarded input sections
  .text.StripLights_Stop
                 0x00000000        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
  .text.StripLights_ColorInc
-                0x00000000       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00000000       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
  .text.StripLights_DisplayClear
                 0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
  .text.StripLights_WriteColor
@@ -397,7 +396,7 @@ END GROUP
                 0x00000001                CY_APPL_LOADABLE = 0x1
                 0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
                 0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
-                0x200002b8                PROVIDE (__cy_heap_start, _end)
+                0x20000570                PROVIDE (__cy_heap_start, _end)
                 0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
                 0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x1000))
                 0x20000c00                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
@@ -412,7 +411,7 @@ END GROUP
                 0x00000000                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
                 0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
 
-.text           0x00001200      0xc8c
+.text           0x00001200      0xd2c
  CREATE_OBJECT_SYMBOLS
                 0x00001200                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -431,131 +430,136 @@ END GROUP
                 0x00001370                . = MAX (., 0x100)
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x00001370       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
- .text.main     0x000013d0       0x8c .\CortexM0\ARM_GCC_493\Debug\main.o
-                0x000013d0                main
+ .text.flashLightning
+                0x000013d0       0x78 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x000013d0                flashLightning
+ .text.main     0x00001448       0xa0 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00001448                main
  .text.IntDefaultHandler
-                0x0000145c        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x0000145c                IntDefaultHandler
- .text._sbrk    0x00001460       0x30 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x00001460                _sbrk
- .text.Start_c  0x00001490       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x00001490                Start_c
+                0x000014e8        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x000014e8                IntDefaultHandler
+ .text._sbrk    0x000014ec       0x30 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x000014ec                _sbrk
+ .text.Start_c  0x0000151c       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x0000151c                Start_c
  .text.initialize_psoc
-                0x000014d8       0x58 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x000014d8                initialize_psoc
+                0x00001564       0x58 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00001564                initialize_psoc
  .text.cfg_write_bytes32
-                0x00001530       0x34 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+                0x000015bc       0x34 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
  .text.CYMEMZERO
-                0x00001564        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+                0x000015f0        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
  .text.CyIntEnable
-                0x00001570       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x00001570                CyIntEnable
- .text.CyHalt   0x00001584        0x4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x00001584                CyHalt
+                0x000015fc       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x000015fc                CyIntEnable
+ .text.CyHalt   0x00001610        0x4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x00001610                CyHalt
  .text.CyIntSetVector
-                0x00001588       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x00001588                CyIntSetVector
+                0x00001614       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x00001614                CyIntSetVector
+ .text.CyDelay  0x00001638       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x00001638                CyDelay
  .text.CyDelayUs
-                0x000015ac       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x000015ac                CyDelayUs
+                0x00001668       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x00001668                CyDelayUs
  .text.CySysClkWriteImoFreq
-                0x000015c0      0x164 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x000015c0                CySysClkWriteImoFreq
+                0x0000167c      0x164 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x0000167c                CySysClkWriteImoFreq
  .text.CySysWdtLocked
-                0x00001724       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x000017e0       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
  .text.CySysWdtLock
-                0x00001738       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
-                0x00001738                CySysWdtLock
+                0x000017f4       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x000017f4                CySysWdtLock
  .text.CySysWdtUnlock
-                0x00001754       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
-                0x00001754                CySysWdtUnlock
+                0x00001810       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x00001810                CySysWdtUnlock
  .text.CySysWdtClearInterrupt
-                0x00001784       0x4c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
-                0x00001784                CySysWdtClearInterrupt
+                0x00001840       0x4c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x00001840                CySysWdtClearInterrupt
  .text.CySysWdtIsr
-                0x000017d0       0xa4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
-                0x000017d0                CySysWdtIsr
+                0x0000188c       0xa4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x0000188c                CySysWdtIsr
  .text.StripLights_FISR
-                0x00001874       0x68 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x00001874                StripLights_FISR
+                0x00001930       0x60 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001930                StripLights_FISR
  .text.StripLights_CISR
-                0x000018dc       0x84 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x000018dc                StripLights_CISR
+                0x00001990       0x7c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001990                StripLights_CISR
  .text.StripLights_Trigger
-                0x00001960       0x78 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x00001960                StripLights_Trigger
+                0x00001a0c       0x6c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001a0c                StripLights_Trigger
  .text.StripLights_Ready
-                0x000019d8       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x000019d8                StripLights_Ready
+                0x00001a78       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001a78                StripLights_Ready
  .text.StripLights_MemClear
-                0x000019f4       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x000019f4                StripLights_MemClear
+                0x00001a94       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001a94                StripLights_MemClear
  .text.StripLights_Pixel
-                0x00001a1c       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x00001a1c                StripLights_Pixel
+                0x00001abc       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001abc                StripLights_Pixel
  .text.StripLights_Dim
-                0x00001a40       0x78 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x00001a40                StripLights_Dim
+                0x00001ae0       0x78 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001ae0                StripLights_Dim
  .text.StripLights_Start
-                0x00001ab8       0x7c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x00001ab8                StripLights_Start
+                0x00001b58       0x7c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00001b58                StripLights_Start
  .text.StripLights_SetFont
-                0x00001b34       0x4c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
-                0x00001b34                StripLights_SetFont
+                0x00001bd4       0x4c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+                0x00001bd4                StripLights_SetFont
  .text.StripLights_cisr_SetVector
-                0x00001b80        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                0x00001b80                StripLights_cisr_SetVector
+                0x00001c20        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00001c20                StripLights_cisr_SetVector
  .text.StripLights_cisr_SetPriority
-                0x00001b8c       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                0x00001b8c                StripLights_cisr_SetPriority
+                0x00001c2c       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00001c2c                StripLights_cisr_SetPriority
  .text.StripLights_cisr_Enable
-                0x00001bac        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                0x00001bac                StripLights_cisr_Enable
+                0x00001c4c        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00001c4c                StripLights_cisr_Enable
  .text.StripLights_cisr_Disable
-                0x00001bb8        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                0x00001bb8                StripLights_cisr_Disable
+                0x00001c58        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00001c58                StripLights_cisr_Disable
  .text.StripLights_cisr_StartEx
-                0x00001bc4       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                0x00001bc4                StripLights_cisr_StartEx
+                0x00001c64       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00001c64                StripLights_cisr_StartEx
  .text.StripLights_fisr_SetVector
-                0x00001be0        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                0x00001be0                StripLights_fisr_SetVector
+                0x00001c80        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x00001c80                StripLights_fisr_SetVector
  .text.StripLights_fisr_SetPriority
-                0x00001bec       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                0x00001bec                StripLights_fisr_SetPriority
+                0x00001c8c       0x24 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x00001c8c                StripLights_fisr_SetPriority
  .text.StripLights_fisr_Enable
-                0x00001c10        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                0x00001c10                StripLights_fisr_Enable
+                0x00001cb0        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x00001cb0                StripLights_fisr_Enable
  .text.StripLights_fisr_Disable
-                0x00001c1c        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                0x00001c1c                StripLights_fisr_Disable
+                0x00001cbc        0xc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x00001cbc                StripLights_fisr_Disable
  .text.StripLights_fisr_StartEx
-                0x00001c28       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                0x00001c28                StripLights_fisr_StartEx
- *fill*         0x00001c44        0x4 
- .text          0x00001c48       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
-                0x00001c48                CyDelayCycles
-                0x00001c5c                CyEnterCriticalSection
-                0x00001c64                CyExitCriticalSection
- .text.__errno  0x00001c70        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
-                0x00001c70                __errno
+                0x00001cc8       0x1c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x00001cc8                StripLights_fisr_StartEx
+ *fill*         0x00001ce4        0x4 
+ .text          0x00001ce8       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
+                0x00001ce8                CyDelayCycles
+                0x00001cfc                CyEnterCriticalSection
+                0x00001d04                CyExitCriticalSection
+ .text.__errno  0x00001d10        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x00001d10                __errno
  .text.__libc_init_array
-                0x00001c7c       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
-                0x00001c7c                __libc_init_array
- .text.memset   0x00001cc8       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
-                0x00001cc8                memset
- .text.rand     0x00001cd8       0x78 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-rand.o)
-                0x00001cd8                rand
- .text.malloc   0x00001d50       0x14 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-malloc.o)
-                0x00001d50                malloc
+                0x00001d1c       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00001d1c                __libc_init_array
+ .text.memset   0x00001d68       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x00001d68                memset
+ .text.rand     0x00001d78       0x78 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-rand.o)
+                0x00001d78                rand
+ .text.malloc   0x00001df0       0x14 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-malloc.o)
+                0x00001df0                malloc
  .text._malloc_r
-                0x00001d64       0xb0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x00001d64                _malloc_r
- .text._sbrk_r  0x00001e14       0x24 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-sbrkr.o)
-                0x00001e14                _sbrk_r
- .text          0x00001e38       0x54 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
-                0x00001e38                __muldi3
-                0x00001e38                __aeabi_lmul
+                0x00001e04       0xb0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00001e04                _malloc_r
+ .text._sbrk_r  0x00001eb4       0x24 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-sbrkr.o)
+                0x00001eb4                _sbrk_r
+ .text          0x00001ed8       0x54 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
+                0x00001ed8                __muldi3
+                0x00001ed8                __aeabi_lmul
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -568,84 +572,84 @@ END GROUP
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00001e8c        0x0
+.v4_bx          0x00001f2c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00001e8c        0x0
+.iplt           0x00001f2c        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00001e8c        0x4
+.eh_frame       0x00001f2c        0x4
  *(.eh_frame)
- .eh_frame      0x00001e8c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
- .eh_frame      0x00001e8c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
-                0x00001e90                PROVIDE (__exidx_start, .)
+ .eh_frame      0x00001f2c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .eh_frame      0x00001f2c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x00001f30                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001e90                __exidx_end = .
+                0x00001f30                __exidx_end = .
 
-.rodata         0x00001e90      0x738
+.rodata         0x00001f30      0x9a8
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00001e90      0x138 .\CortexM0\ARM_GCC_493\Debug\main.o
- .rodata        0x00001fc8      0x1d8 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .rodata        0x000021a0       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                0x000021a0                cyImoFreqMhz2Reg
- .rodata        0x000021d0      0x1e0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                0x000021d0                StripLights_CLUT
- .rodata        0x000023b0      0x1e0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
-                0x000023b0                StripLights_Font5x7
+ .rodata        0x00001f30      0x3a8 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .rodata        0x000022d8      0x1d8 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .rodata        0x000024b0       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x000024b0                cyImoFreqMhz2Reg
+ .rodata        0x000024e0      0x1e0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x000024e0                StripLights_CLUT
+ .rodata        0x000026c0      0x1e0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+                0x000026c0                StripLights_Font5x7
  .rodata.str1.1
-                0x00002590        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
-                0x00002594                . = ALIGN (0x4)
- *fill*         0x00002592        0x2 
+                0x000028a0        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x000028a4                . = ALIGN (0x4)
+ *fill*         0x000028a2        0x2 
  *(.init)
- .init          0x00002594        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
-                0x00002594                _init
- .init          0x00002598        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
-                0x000025a0                . = ALIGN (0x4)
-                0x000025a0                __preinit_array_start = .
+ .init          0x000028a4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x000028a4                _init
+ .init          0x000028a8        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x000028b0                . = ALIGN (0x4)
+                0x000028b0                __preinit_array_start = .
  *(.preinit_array)
-                0x000025a0                __preinit_array_end = .
-                0x000025a0                . = ALIGN (0x4)
-                0x000025a0                __init_array_start = .
+                0x000028b0                __preinit_array_end = .
+                0x000028b0                . = ALIGN (0x4)
+                0x000028b0                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x000025a0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
- .init_array    0x000025a4        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                0x000025a8                __init_array_end = .
-                0x000025a8                . = ALIGN (0x4)
+ .init_array    0x000028b0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .init_array    0x000028b4        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x000028b8                __init_array_end = .
+                0x000028b8                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000025a8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
-                0x000025a8                _fini
- .fini          0x000025ac        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
-                0x000025b4                . = ALIGN (0x4)
-                0x000025b4                __fini_array_start = .
+ .fini          0x000028b8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x000028b8                _fini
+ .fini          0x000028bc        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x000028c4                . = ALIGN (0x4)
+                0x000028c4                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000025b4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .fini_array    0x000028c4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000025b8                __fini_array_end = .
-                0x000025b8                . = ALIGN (0x4)
+                0x000028c8                __fini_array_end = .
+                0x000028c8                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x000025b8                . = ALIGN (0x4)
+                0x000028c8                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x000025b8                . = ALIGN (0x4)
-                0x000025b8                __cy_regions = .
-                0x000025b8        0x4 LONG 0x25c8 __cy_region_init_ram
-                0x000025bc        0x4 LONG 0x200000d0 __cy_region_start_data
-                0x000025c0        0x4 LONG 0x80 __cy_region_init_size_ram
-                0x000025c4        0x4 LONG 0x168 __cy_region_zero_size_ram
-                0x000025c8                __cy_regions_end = .
-                0x000025c8                . = ALIGN (0x8)
-                0x000025c8                _etext = .
+                0x000028c8                . = ALIGN (0x4)
+                0x000028c8                __cy_regions = .
+                0x000028c8        0x4 LONG 0x28d8 __cy_region_init_ram
+                0x000028cc        0x4 LONG 0x200000d0 __cy_region_start_data
+                0x000028d0        0x4 LONG 0x80 __cy_region_init_size_ram
+                0x000028d4        0x4 LONG 0x420 __cy_region_zero_size_ram
+                0x000028d8                __cy_regions_end = .
+                0x000028d8                . = ALIGN (0x8)
+                0x000028d8                _etext = .
 
 .ramvectors     0x20000000       0xc0
                 0x20000000                __cy_region_start_ram = .
@@ -663,7 +667,7 @@ END GROUP
  *(.noinit)
  .noinit        0x200000c8        0x4 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
 
-.data           0x200000d0       0x80 load address 0x000025c8
+.data           0x200000d0       0x80 load address 0x000028d8
                 0x200000d0                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x200000d0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
@@ -688,10 +692,10 @@ END GROUP
  *(.ram)
                 0x20000150                _edata = .
 
-.igot.plt       0x20000150        0x0 load address 0x00002648
+.igot.plt       0x20000150        0x0 load address 0x00002958
  .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
 
-.bss            0x20000150      0x168 load address 0x00002648
+.bss            0x20000150      0x420 load address 0x00002958
                 0x20000150                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -708,33 +712,33 @@ END GROUP
                 0x200001a4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-mallocr.o)
                 0x200001a4                __malloc_free_list
  *(COMMON)
- COMMON         0x200001a8       0xfc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ COMMON         0x200001a8      0x3b4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
                 0x200001a8                StripLights_ledArray
-                0x20000298                StripLights_DimMask
-                0x2000029c                StripLights_DimShift
-                0x200002a0                StripLights_refreshComplete
- COMMON         0x200002a4       0x10 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
-                0x200002a4                StripLights_fontX
-                0x200002a8                StripLights_fontOffset
-                0x200002ac                StripLights_fontPtr
-                0x200002b0                StripLights_fontY
- COMMON         0x200002b4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
-                0x200002b4                errno
-                0x200002b8                . = ALIGN (0x8)
+                0x20000550                StripLights_DimMask
+                0x20000554                StripLights_DimShift
+                0x20000558                StripLights_refreshComplete
+ COMMON         0x2000055c       0x10 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+                0x2000055c                StripLights_fontX
+                0x20000560                StripLights_fontOffset
+                0x20000564                StripLights_fontPtr
+                0x20000568                StripLights_fontY
+ COMMON         0x2000056c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
+                0x2000056c                errno
+                0x20000570                . = ALIGN (0x8)
  *(.ram.b)
-                0x200002b8                _end = .
-                0x200002b8                __end = .
-                0x200002b8                PROVIDE (end, .)
-                0x200002b8                PROVIDE (__bss_end__, .)
-                0x000025c8                __cy_region_init_ram = LOADADDR (.data)
+                0x20000570                _end = .
+                0x20000570                __end = .
+                0x20000570                PROVIDE (end, .)
+                0x20000570                PROVIDE (__bss_end__, .)
+                0x000028d8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000080                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x00000168                __cy_region_zero_size_ram = (_end - _edata)
+                0x00000420                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x200002b8       0x80 load address 0x00002648
-                0x200002b8                . = _end
-                0x20000338                . = (. + 0x80)
- *fill*         0x200002b8       0x80 
-                0x20000338                __cy_heap_limit = .
+.heap           0x20000570       0x80 load address 0x00002958
+                0x20000570                . = _end
+                0x200005f0                . = (. + 0x80)
+ *fill*         0x20000570       0x80 
+                0x200005f0                __cy_heap_limit = .
 
 .stack          0x20000c00      0x400
                 0x20000c00                __cy_stack_limit = .
@@ -801,156 +805,156 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x558
+.debug_aranges  0x00000000      0x560
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 .\CortexM0\ARM_GCC_493\Debug\main.o
+                0x00000000       0x28 .\CortexM0\ARM_GCC_493\Debug\main.o
  .debug_aranges
-                0x00000020       0x18 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
+                0x00000028       0x18 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
  .debug_aranges
-                0x00000038       0x18 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                0x00000040       0x18 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
  .debug_aranges
-                0x00000050       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                0x00000058       0x48 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
  .debug_aranges
-                0x00000098       0x38 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+                0x000000a0       0x38 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
  .debug_aranges
-                0x000000d0      0x178 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                0x000000d8      0x178 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
  .debug_aranges
-                0x00000248      0x120 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                0x00000250      0x120 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
  .debug_aranges
-                0x00000368       0xa0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                0x00000370       0xa0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
  .debug_aranges
-                0x00000408       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+                0x00000410       0x30 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
  .debug_aranges
-                0x00000438       0x80 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                0x00000440       0x80 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
  .debug_aranges
-                0x000004b8       0x80 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                0x000004c0       0x80 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
  .debug_aranges
-                0x00000538       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
+                0x00000540       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3807
+.debug_info     0x00000000     0x3932
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x2ce .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_info    0x000002ce      0x14e .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
- .debug_info    0x0000041c       0xb2 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_info    0x000004ce      0x39f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_info    0x0000086d      0x3bd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_info    0x00000c2a      0xad1 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_info    0x000016fb      0xc23 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_info    0x0000231e      0xa9d .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_info    0x00002dbb      0x3bd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_info    0x00003178      0x300 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_info    0x00003478      0x300 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
- .debug_info    0x00003778       0x8f .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
+ .debug_info    0x00000000      0x3e5 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_info    0x000003e5      0x14e .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
+ .debug_info    0x00000533       0xb2 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x000005e5      0x39f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_info    0x00000984      0x3bd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_info    0x00000d41      0xad1 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_info    0x00001812      0xc23 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_info    0x00002435      0xa9d .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_info    0x00002ed2      0x3bd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_info    0x0000328f      0x300 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_info    0x0000358f      0x300 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_info    0x0000388f       0xa3 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
 
-.debug_abbrev   0x00000000     0x10ae
+.debug_abbrev   0x00000000     0x10cb
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x131 .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_abbrev  0x00000131       0x77 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
- .debug_abbrev  0x000001a8       0x5d .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_abbrev  0x00000205      0x1e6 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_abbrev  0x000003eb      0x1d5 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_abbrev  0x000005c0      0x20d .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_abbrev  0x000007cd      0x226 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_abbrev  0x000009f3      0x1fd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_abbrev  0x00000bf0      0x142 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_abbrev  0x00000d32      0x1b4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_abbrev  0x00000ee6      0x1b4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
- .debug_abbrev  0x0000109a       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000000      0x14e .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x0000014e       0x77 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
+ .debug_abbrev  0x000001c5       0x5d .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x00000222      0x1e6 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_abbrev  0x00000408      0x1d5 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000005dd      0x20d .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_abbrev  0x000007ea      0x226 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_abbrev  0x00000a10      0x1fd .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_abbrev  0x00000c0d      0x142 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_abbrev  0x00000d4f      0x1b4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_abbrev  0x00000f03      0x1b4 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_abbrev  0x000010b7       0x14 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
 
-.debug_line     0x00000000     0x1510
+.debug_line     0x00000000     0x1559
  *(.debug_line)
- .debug_line    0x00000000      0x125 .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_line    0x00000125       0x55 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
- .debug_line    0x0000017a       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_line    0x000001cd      0x249 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_line    0x00000416      0x161 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_line    0x00000577      0x44b .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_line    0x000009c2      0x3fe .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_line    0x00000dc0      0x2f3 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_line    0x000010b3      0x10e .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_line    0x000011c1      0x171 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_line    0x00001332      0x175 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
- .debug_line    0x000014a7       0x69 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
+ .debug_line    0x00000000      0x170 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_line    0x00000170       0x55 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
+ .debug_line    0x000001c5       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000218      0x249 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_line    0x00000461      0x161 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_line    0x000005c2      0x44b .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_line    0x00000a0d      0x3fe .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_line    0x00000e0b      0x2f1 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_line    0x000010fc      0x10e .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_line    0x0000120a      0x171 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_line    0x0000137b      0x175 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_line    0x000014f0       0x69 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyBootAsmGnu.o)
 
-.debug_frame    0x00000000      0xf4c
+.debug_frame    0x00000000      0xf68
  *(.debug_frame)
- .debug_frame   0x00000000       0x2c .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_frame   0x0000002c       0xb0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_frame   0x000000dc       0x8c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_frame   0x00000168      0x3d0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_frame   0x00000538      0x368 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_frame   0x000008a0      0x1d0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_frame   0x00000a70       0x84 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_frame   0x00000af4      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_frame   0x00000c04      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
- .debug_frame   0x00000d14       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00000d34       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00000d54       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x00000d7c       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00000da8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00000dc8       0x44 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-rand.o)
- .debug_frame   0x00000e0c       0x40 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00000e4c       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000e78       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000ea4       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00000ed0       0x48 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00000f18       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
+ .debug_frame   0x00000000       0x48 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x00000048       0xb0 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_frame   0x000000f8       0x8c .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_frame   0x00000184      0x3d0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_frame   0x00000554      0x368 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_frame   0x000008bc      0x1d0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_frame   0x00000a8c       0x84 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_frame   0x00000b10      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_frame   0x00000c20      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_frame   0x00000d30       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000d50       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00000d70       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000d98       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00000dc4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000de4       0x44 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-rand.o)
+ .debug_frame   0x00000e28       0x40 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00000e68       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00000e94       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000ec0       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000eec       0x48 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000f34       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_muldi3.o)
 
-.debug_str      0x00000000     0x146e
+.debug_str      0x00000000     0x1491
  *(.debug_str)
- .debug_str     0x00000000      0x1f1 .\CortexM0\ARM_GCC_493\Debug\main.o
-                                0x230 (size before relaxing)
- .debug_str     0x000001f1       0x80 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
-                                0x1ec (size before relaxing)
- .debug_str     0x00000271       0x37 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
-                                0x1a9 (size before relaxing)
- .debug_str     0x000002a8      0x172 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
-                                0x303 (size before relaxing)
- .debug_str     0x0000041a       0xfc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
-                                0x2c5 (size before relaxing)
- .debug_str     0x00000516      0x4ab .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
-                                0x688 (size before relaxing)
- .debug_str     0x000009c1      0x476 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
-                                0x652 (size before relaxing)
- .debug_str     0x00000e37      0x266 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
-                                0x466 (size before relaxing)
- .debug_str     0x0000109d       0xf0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
-                                0x2c4 (size before relaxing)
- .debug_str     0x0000118d      0x178 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
-                                0x377 (size before relaxing)
- .debug_str     0x00001305      0x169 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
-                                0x377 (size before relaxing)
+ .debug_str     0x00000000      0x22d .\CortexM0\ARM_GCC_493\Debug\main.o
+                                0x26c (size before relaxing)
+ .debug_str     0x0000022d       0x80 .\CortexM0\ARM_GCC_493\Debug\cybootloader.o
+                                0x200 (size before relaxing)
+ .debug_str     0x000002ad       0x37 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+                                0x1bd (size before relaxing)
+ .debug_str     0x000002e4      0x172 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+                                0x317 (size before relaxing)
+ .debug_str     0x00000456       0xfc .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+                                0x2d9 (size before relaxing)
+ .debug_str     0x00000552      0x4a3 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+                                0x69c (size before relaxing)
+ .debug_str     0x000009f5      0x476 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+                                0x666 (size before relaxing)
+ .debug_str     0x00000e6b      0x255 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+                                0x47a (size before relaxing)
+ .debug_str     0x000010c0       0xf0 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+                                0x2d8 (size before relaxing)
+ .debug_str     0x000011b0      0x178 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+                                0x38b (size before relaxing)
+ .debug_str     0x00001328      0x169 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+                                0x38b (size before relaxing)
 
-.debug_loc      0x00000000     0x1a51
+.debug_loc      0x00000000     0x1a68
  *(.debug_loc)
- .debug_loc     0x00000000       0x29 .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_loc     0x00000029      0x14f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_loc     0x00000178      0x118 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_loc     0x00000290      0x5b5 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_loc     0x00000845      0x7df .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_loc     0x00001024      0x6d7 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_loc     0x000016fb      0x252 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_loc     0x0000194d       0x82 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_loc     0x000019cf       0x82 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_loc     0x00000000       0x54 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x00000054      0x14f .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_loc     0x000001a3      0x118 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_loc     0x000002bb      0x5b5 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_loc     0x00000870      0x7df .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_loc     0x0000104f      0x6c3 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_loc     0x00001712      0x252 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_loc     0x00001964       0x82 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_loc     0x000019e6       0x82 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0x478
+.debug_ranges   0x00000000      0x480
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x10 .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_ranges  0x00000010       0x38 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_ranges  0x00000048       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
- .debug_ranges  0x00000070      0x168 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
- .debug_ranges  0x000001d8      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
- .debug_ranges  0x000002e8       0x90 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
- .debug_ranges  0x00000378       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
- .debug_ranges  0x00000398       0x70 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
- .debug_ranges  0x00000408       0x70 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
+ .debug_ranges  0x00000000       0x18 .\CortexM0\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000018       0x38 .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_ranges  0x00000050       0x28 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000078      0x168 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLib.o)
+ .debug_ranges  0x000001e0      0x110 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(CyLFClk.o)
+ .debug_ranges  0x000002f0       0x90 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights.o)
+ .debug_ranges  0x00000380       0x20 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fonts.o)
+ .debug_ranges  0x000003a0       0x70 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_cisr.o)
+ .debug_ranges  0x00000410       0x70 .\CortexM0\ARM_GCC_493\Debug\EndOfTheAnalogTrail.a(StripLights_fisr.o)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_493\Debug\main.o

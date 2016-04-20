@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
   30:.\Generated_Source\PSoC4/StripLights_fisr.c **** 
   31:.\Generated_Source\PSoC4/StripLights_fisr.c **** /* `#END` */
   32:.\Generated_Source\PSoC4/StripLights_fisr.c **** 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 2
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/StripLights_fisr.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
   87:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   {
   88:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   }
   89:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   Function prototype example:
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 3
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 3
 
 
   90:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   CY_ISR_PROTO(MyISR);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  144:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   The default Interrupt Service Routine for StripLights_fisr.
  145:.\Generated_Source\PSoC4/StripLights_fisr.c **** *
  146:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   Add custom code between the START and END comments to keep the next version
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 4
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 4
 
 
  147:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   of this file from over-writing your code.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  185:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   CY_ISR(MyISR)
  186:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   {
  187:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   }
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 5
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 5
 
 
  188:.\Generated_Source\PSoC4/StripLights_fisr.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  218:.\Generated_Source\PSoC4/StripLights_fisr.c **** *******************************************************************************/
  219:.\Generated_Source\PSoC4/StripLights_fisr.c **** cyisraddress StripLights_fisr_GetVector(void)
  220:.\Generated_Source\PSoC4/StripLights_fisr.c **** {
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 6
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 6
 
 
   66              		.loc 1 220 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
   90              		.cfi_startproc
   91              	.LVL1:
   92 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 7
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 7
 
 
   93              		.cfi_def_cfa_offset 8
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  264:.\Generated_Source\PSoC4/StripLights_fisr.c **** *
  265:.\Generated_Source\PSoC4/StripLights_fisr.c **** * Summary:
  266:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   Gets the Priority of the Interrupt.
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 8
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 8
 
 
  267:.\Generated_Source\PSoC4/StripLights_fisr.c **** *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  292:.\Generated_Source\PSoC4/StripLights_fisr.c **** * Summary:
  293:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
  294:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 9
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 9
 
 
  295:.\Generated_Source\PSoC4/StripLights_fisr.c **** *   function, which sets the vector and the priority, has been called.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  325:.\Generated_Source\PSoC4/StripLights_fisr.c **** uint8 StripLights_fisr_GetState(void)
  326:.\Generated_Source\PSoC4/StripLights_fisr.c **** {
  186              		.loc 1 326 0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 10
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 10
 
 
  187              		.cfi_startproc
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  218              		.loc 1 349 0
  219 0000 0422     		mov	r2, #4
  220 0002 014B     		ldr	r3, .L23
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 11
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 11
 
 
  221 0004 1A60     		str	r2, [r3]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  268              	.LFE0:
  269              		.size	StripLights_fisr_Start, .-StripLights_fisr_Start
  270              		.section	.text.StripLights_fisr_StartEx,"ax",%progbits
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 12
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 12
 
 
  271              		.align	2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  318              		.cfi_def_cfa_offset 8
  319              		.cfi_offset 3, -8
  320              		.cfi_offset 14, -4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 13
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 13
 
 
  132:.\Generated_Source\PSoC4/StripLights_fisr.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  375:.\Generated_Source\PSoC4/StripLights_fisr.c ****     *StripLights_fisr_INTC_SET_PD = StripLights_fisr__INTC_MASK;
  348              		.loc 1 375 0
  349 0000 0422     		mov	r2, #4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 14
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 14
 
 
  350 0002 014B     		ldr	r3, .L33
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  378 0006 7047     		bx	lr
  379              	.L37:
  380              		.align	2
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 15
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 15
 
 
  381              	.L36:
@@ -857,48 +857,48 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  394 0006 00000000 		.4byte	.Ldebug_abbrev0
  395 000a 04       		.byte	0x4
  396 000b 01       		.uleb128 0x1
- 397 000c 74020000 		.4byte	.LASF33
+ 397 000c 88020000 		.4byte	.LASF33
  398 0010 01       		.byte	0x1
- 399 0011 02030000 		.4byte	.LASF34
- 400 0015 06000000 		.4byte	.LASF35
+ 399 0011 16030000 		.4byte	.LASF34
+ 400 0015 4E010000 		.4byte	.LASF35
  401 0019 00000000 		.4byte	.Ldebug_ranges0+0
  402 001d 00000000 		.4byte	0
  403 0021 00000000 		.4byte	.Ldebug_line0
  404 0025 02       		.uleb128 0x2
  405 0026 01       		.byte	0x1
  406 0027 06       		.byte	0x6
- 407 0028 6B030000 		.4byte	.LASF0
+ 407 0028 7F030000 		.4byte	.LASF0
  408 002c 02       		.uleb128 0x2
  409 002d 01       		.byte	0x1
  410 002e 08       		.byte	0x8
- 411 002f 36010000 		.4byte	.LASF1
+ 411 002f F7000000 		.4byte	.LASF1
  412 0033 02       		.uleb128 0x2
  413 0034 02       		.byte	0x2
  414 0035 05       		.byte	0x5
- 415 0036 2E030000 		.4byte	.LASF2
+ 415 0036 42030000 		.4byte	.LASF2
  416 003a 02       		.uleb128 0x2
  417 003b 02       		.byte	0x2
  418 003c 07       		.byte	0x7
- 419 003d 68000000 		.4byte	.LASF3
+ 419 003d 29000000 		.4byte	.LASF3
  420 0041 02       		.uleb128 0x2
  421 0042 04       		.byte	0x4
  422 0043 05       		.byte	0x5
- 423 0044 47030000 		.4byte	.LASF4
+ 423 0044 5B030000 		.4byte	.LASF4
  424 0048 02       		.uleb128 0x2
  425 0049 04       		.byte	0x4
  426 004a 07       		.byte	0x7
- 427 004b 6C010000 		.4byte	.LASF5
+ 427 004b 2D010000 		.4byte	.LASF5
  428 004f 02       		.uleb128 0x2
  429 0050 08       		.byte	0x8
  430 0051 05       		.byte	0x5
- 431 0052 11020000 		.4byte	.LASF6
+ 431 0052 25020000 		.4byte	.LASF6
  432 0056 02       		.uleb128 0x2
  433 0057 08       		.byte	0x8
  434 0058 07       		.byte	0x7
- 435 0059 1F010000 		.4byte	.LASF7
+ 435 0059 E0000000 		.4byte	.LASF7
  436 005d 03       		.uleb128 0x3
  437 005e 04       		.byte	0x4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 16
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 16
 
 
  438 005f 05       		.byte	0x5
@@ -906,29 +906,29 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  440 0064 02       		.uleb128 0x2
  441 0065 04       		.byte	0x4
  442 0066 07       		.byte	0x7
- 443 0067 D0010000 		.4byte	.LASF8
+ 443 0067 E4010000 		.4byte	.LASF8
  444 006b 04       		.uleb128 0x4
- 445 006c 7E010000 		.4byte	.LASF9
+ 445 006c 3F010000 		.4byte	.LASF9
  446 0070 02       		.byte	0x2
  447 0071 3801     		.2byte	0x138
  448 0073 2C000000 		.4byte	0x2c
  449 0077 04       		.uleb128 0x4
- 450 0078 B2010000 		.4byte	.LASF10
+ 450 0078 C6010000 		.4byte	.LASF10
  451 007c 02       		.byte	0x2
  452 007d 3A01     		.2byte	0x13a
  453 007f 48000000 		.4byte	0x48
  454 0083 02       		.uleb128 0x2
  455 0084 04       		.byte	0x4
  456 0085 04       		.byte	0x4
- 457 0086 FE000000 		.4byte	.LASF11
+ 457 0086 BF000000 		.4byte	.LASF11
  458 008a 02       		.uleb128 0x2
  459 008b 08       		.byte	0x8
  460 008c 04       		.byte	0x4
- 461 008d 8D010000 		.4byte	.LASF12
+ 461 008d A1010000 		.4byte	.LASF12
  462 0091 02       		.uleb128 0x2
  463 0092 01       		.byte	0x1
  464 0093 08       		.byte	0x8
- 465 0094 36020000 		.4byte	.LASF13
+ 465 0094 4A020000 		.4byte	.LASF13
  466 0098 04       		.uleb128 0x4
  467 0099 00000000 		.4byte	.LASF14
  468 009d 02       		.byte	0x2
@@ -937,7 +937,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  471 00a4 05       		.uleb128 0x5
  472 00a5 77000000 		.4byte	0x77
  473 00a9 04       		.uleb128 0x4
- 474 00aa FB010000 		.4byte	.LASF15
+ 474 00aa 0F020000 		.4byte	.LASF15
  475 00ae 02       		.byte	0x2
  476 00af F401     		.2byte	0x1f4
  477 00b1 B5000000 		.4byte	0xb5
@@ -948,9 +948,9 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  482 00bc 02       		.uleb128 0x2
  483 00bd 04       		.byte	0x4
  484 00be 07       		.byte	0x7
- 485 00bf 08020000 		.4byte	.LASF16
+ 485 00bf 1C020000 		.4byte	.LASF16
  486 00c3 08       		.uleb128 0x8
- 487 00c4 04010000 		.4byte	.LASF23
+ 487 00c4 C5000000 		.4byte	.LASF23
  488 00c8 01       		.byte	0x1
  489 00c9 9F       		.byte	0x9f
  490 00ca 00000000 		.4byte	.LFB3
@@ -958,10 +958,10 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  492 00d2 01       		.uleb128 0x1
  493 00d3 9C       		.byte	0x9c
  494 00d4 09       		.uleb128 0x9
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 17
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 17
 
 
- 495 00d5 50030000 		.4byte	.LASF17
+ 495 00d5 64030000 		.4byte	.LASF17
  496 00d9 01       		.byte	0x1
  497 00da C7       		.byte	0xc7
  498 00db 00000000 		.4byte	.LFB4
@@ -970,7 +970,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  501 00e4 9C       		.byte	0x9c
  502 00e5 F7000000 		.4byte	0xf7
  503 00e9 0A       		.uleb128 0xa
- 504 00ea DD010000 		.4byte	.LASF19
+ 504 00ea F1010000 		.4byte	.LASF19
  505 00ee 01       		.byte	0x1
  506 00ef C7       		.byte	0xc7
  507 00f0 A9000000 		.4byte	0xa9
@@ -978,7 +978,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  509 00f5 50       		.byte	0x50
  510 00f6 00       		.byte	0
  511 00f7 0B       		.uleb128 0xb
- 512 00f8 E3000000 		.4byte	.LASF25
+ 512 00f8 A4000000 		.4byte	.LASF25
  513 00fc 01       		.byte	0x1
  514 00fd DB       		.byte	0xdb
  515 00fe A9000000 		.4byte	0xa9
@@ -987,7 +987,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  518 010a 01       		.uleb128 0x1
  519 010b 9C       		.byte	0x9c
  520 010c 09       		.uleb128 0x9
- 521 010d 7B000000 		.4byte	.LASF18
+ 521 010d 3C000000 		.4byte	.LASF18
  522 0111 01       		.byte	0x1
  523 0112 F9       		.byte	0xf9
  524 0113 00000000 		.4byte	.LFB6
@@ -996,19 +996,19 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  527 011c 9C       		.byte	0x9c
  528 011d 5E010000 		.4byte	0x15e
  529 0121 0C       		.uleb128 0xc
- 530 0122 84010000 		.4byte	.LASF20
+ 530 0122 45010000 		.4byte	.LASF20
  531 0126 01       		.byte	0x1
  532 0127 F9       		.byte	0xf9
  533 0128 6B000000 		.4byte	0x6b
  534 012c 00000000 		.4byte	.LLST0
  535 0130 0D       		.uleb128 0xd
- 536 0131 5D010000 		.4byte	.LASF21
+ 536 0131 1E010000 		.4byte	.LASF21
  537 0135 01       		.byte	0x1
  538 0136 FB       		.byte	0xfb
  539 0137 6B000000 		.4byte	0x6b
  540 013b 21000000 		.4byte	.LLST1
  541 013f 0E       		.uleb128 0xe
- 542 0140 38030000 		.4byte	.LASF22
+ 542 0140 4C030000 		.4byte	.LASF22
  543 0144 01       		.byte	0x1
  544 0145 FC       		.byte	0xfc
  545 0146 77000000 		.4byte	0x77
@@ -1018,13 +1018,13 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  549 0150 E7020000 		.4byte	0x2e7
  550 0154 0F       		.uleb128 0xf
  551 0155 1A000000 		.4byte	.LVL4
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 18
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 18
 
 
  552 0159 F2020000 		.4byte	0x2f2
  553 015d 00       		.byte	0
  554 015e 10       		.uleb128 0x10
- 555 015f 3B020000 		.4byte	.LASF36
+ 555 015f 4F020000 		.4byte	.LASF36
  556 0163 01       		.byte	0x1
  557 0164 1501     		.2byte	0x115
  558 0166 6B000000 		.4byte	0x6b
@@ -1034,20 +1034,20 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  562 0173 9C       		.byte	0x9c
  563 0174 96010000 		.4byte	0x196
  564 0178 11       		.uleb128 0x11
- 565 0179 84010000 		.4byte	.LASF20
+ 565 0179 45010000 		.4byte	.LASF20
  566 017d 01       		.byte	0x1
  567 017e 1701     		.2byte	0x117
  568 0180 77000000 		.4byte	0x77
  569 0184 34000000 		.4byte	.LLST2
  570 0188 12       		.uleb128 0x12
- 571 0189 38030000 		.4byte	.LASF22
+ 571 0189 4C030000 		.4byte	.LASF22
  572 018d 01       		.byte	0x1
  573 018e 1801     		.2byte	0x118
  574 0190 77000000 		.4byte	0x77
  575 0194 16       		.byte	0x16
  576 0195 00       		.byte	0
  577 0196 13       		.uleb128 0x13
- 578 0197 CB000000 		.4byte	.LASF24
+ 578 0197 8C000000 		.4byte	.LASF24
  579 019b 01       		.byte	0x1
  580 019c 3001     		.2byte	0x130
  581 019e 00000000 		.4byte	.LFB8
@@ -1055,7 +1055,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  583 01a6 01       		.uleb128 0x1
  584 01a7 9C       		.byte	0x9c
  585 01a8 14       		.uleb128 0x14
- 586 01a9 B1000000 		.4byte	.LASF26
+ 586 01a9 72000000 		.4byte	.LASF26
  587 01ad 01       		.byte	0x1
  588 01ae 4501     		.2byte	0x145
  589 01b0 6B000000 		.4byte	0x6b
@@ -1064,7 +1064,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  592 01bc 01       		.uleb128 0x1
  593 01bd 9C       		.byte	0x9c
  594 01be 13       		.uleb128 0x13
- 595 01bf 44010000 		.4byte	.LASF27
+ 595 01bf 05010000 		.4byte	.LASF27
  596 01c3 01       		.byte	0x1
  597 01c4 5A01     		.2byte	0x15a
  598 01c6 00000000 		.4byte	.LFB10
@@ -1072,13 +1072,13 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  600 01ce 01       		.uleb128 0x1
  601 01cf 9C       		.byte	0x9c
  602 01d0 09       		.uleb128 0x9
- 603 01d1 1F020000 		.4byte	.LASF28
+ 603 01d1 33020000 		.4byte	.LASF28
  604 01d5 01       		.byte	0x1
  605 01d6 38       		.byte	0x38
  606 01d7 00000000 		.4byte	.LFB0
  607 01db 1C000000 		.4byte	.LFE0-.LFB0
  608 01df 01       		.uleb128 0x1
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 19
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 19
 
 
  609 01e0 9C       		.byte	0x9c
@@ -1112,7 +1112,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  637 021d 96010000 		.4byte	0x196
  638 0221 00       		.byte	0
  639 0222 09       		.uleb128 0x9
- 640 0223 98000000 		.4byte	.LASF29
+ 640 0223 59000000 		.4byte	.LASF29
  641 0227 01       		.byte	0x1
  642 0228 63       		.byte	0x63
  643 0229 00000000 		.4byte	.LFB1
@@ -1121,7 +1121,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  646 0232 9C       		.byte	0x9c
  647 0233 80020000 		.4byte	0x280
  648 0237 0C       		.uleb128 0xc
- 649 0238 DD010000 		.4byte	.LASF19
+ 649 0238 F1010000 		.4byte	.LASF19
  650 023c 01       		.byte	0x1
  651 023d 63       		.byte	0x63
  652 023e A9000000 		.4byte	0xa9
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  663 025e 50       		.byte	0x50
  664 025f 02       		.uleb128 0x2
  665 0260 74       		.byte	0x74
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 20
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 20
 
 
  666 0261 00       		.sleb128 0
@@ -1158,7 +1158,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  680 027b 96010000 		.4byte	0x196
  681 027f 00       		.byte	0
  682 0280 09       		.uleb128 0x9
- 683 0281 52000000 		.4byte	.LASF30
+ 683 0281 13000000 		.4byte	.LASF30
  684 0285 01       		.byte	0x1
  685 0286 81       		.byte	0x81
  686 0287 00000000 		.4byte	.LFB2
@@ -1174,7 +1174,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  696 02a3 D4000000 		.4byte	0xd4
  697 02a7 00       		.byte	0
  698 02a8 13       		.uleb128 0x13
- 699 02a9 58020000 		.4byte	.LASF31
+ 699 02a9 6C020000 		.4byte	.LASF31
  700 02ad 01       		.byte	0x1
  701 02ae 7501     		.2byte	0x175
  702 02b0 00000000 		.4byte	.LFB11
@@ -1182,7 +1182,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  704 02b8 01       		.uleb128 0x1
  705 02b9 9C       		.byte	0x9c
  706 02ba 13       		.uleb128 0x13
- 707 02bb 94010000 		.4byte	.LASF32
+ 707 02bb A8010000 		.4byte	.LASF32
  708 02bf 01       		.byte	0x1
  709 02c0 8E01     		.2byte	0x18e
  710 02c2 00000000 		.4byte	.LFB12
@@ -1197,20 +1197,20 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  719 02da 2F       		.byte	0x2f
  720 02db 00       		.byte	0
  721 02dc 19       		.uleb128 0x19
- 722 02dd 45000000 		.4byte	.LASF37
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 21
+ 722 02dd 06000000 		.4byte	.LASF37
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 21
 
 
  723 02e1 01       		.byte	0x1
  724 02e2 21       		.byte	0x21
  725 02e3 CC020000 		.4byte	0x2cc
  726 02e7 1A       		.uleb128 0x1a
- 727 02e8 B9010000 		.4byte	.LASF38
+ 727 02e8 CD010000 		.4byte	.LASF38
  728 02ec 03       		.byte	0x3
  729 02ed 61       		.byte	0x61
  730 02ee 6B000000 		.4byte	0x6b
  731 02f2 1B       		.uleb128 0x1b
- 732 02f3 E5010000 		.4byte	.LASF39
+ 732 02f3 F9010000 		.4byte	.LASF39
  733 02f7 03       		.byte	0x3
  734 02f8 62       		.byte	0x62
  735 02f9 1C       		.uleb128 0x1c
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  777 0024 0B       		.uleb128 0xb
  778 0025 03       		.uleb128 0x3
  779 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 22
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 22
 
 
  780 0027 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  834 005d 06       		.uleb128 0x6
  835 005e 40       		.uleb128 0x40
  836 005f 18       		.uleb128 0x18
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 23
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 23
 
 
  837 0060 9742     		.uleb128 0x2117
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  891 0098 0B       		.uleb128 0xb
  892 0099 27       		.uleb128 0x27
  893 009a 19       		.uleb128 0x19
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 24
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 24
 
 
  894 009b 49       		.uleb128 0x49
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  948 00d2 0B       		.uleb128 0xb
  949 00d3 00       		.byte	0
  950 00d4 00       		.byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 25
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 25
 
 
  951 00d5 0F       		.uleb128 0xf
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1005 010e 03       		.uleb128 0x3
  1006 010f 0E       		.uleb128 0xe
  1007 0110 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 26
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 26
 
 
  1008 0111 0B       		.uleb128 0xb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1062 0149 19       		.uleb128 0x19
  1063 014a 00       		.byte	0
  1064 014b 00       		.byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 27
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 27
 
 
  1065 014c 15       		.uleb128 0x15
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1119 0187 00       		.byte	0
  1120 0188 1A       		.uleb128 0x1a
  1121 0189 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 28
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 28
 
 
  1122 018a 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1176 0017 50       		.byte	0x50
  1177 0018 9F       		.byte	0x9f
  1178 0019 00000000 		.4byte	0
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 29
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 29
 
 
  1179 001d 00000000 		.4byte	0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1233 0024 0C000000 		.4byte	.LFE5-.LFB5
  1234 0028 00000000 		.4byte	.LFB6
  1235 002c 24000000 		.4byte	.LFE6-.LFB6
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 30
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 30
 
 
  1236 0030 00000000 		.4byte	.LFB7
@@ -1798,232 +1798,233 @@ ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 1
  1288      00000201 
  1288      FB0E0D00 
  1288      01010101 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 31
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 31
 
 
  1289              	.LASF14:
  1290 0000 72656733 		.ascii	"reg32\000"
  1290      3200
- 1291              	.LASF35:
- 1292 0006 463A5C44 		.ascii	"F:\\Downloads\\FunWithLEDs\\FunWithLEDs\\EndOfTheAn"
- 1292      6F776E6C 
- 1292      6F616473 
- 1292      5C46756E 
- 1292      57697468 
- 1293 0035 616C6F67 		.ascii	"alogTrail.cydsn\000"
- 1293      54726169 
- 1293      6C2E6379 
- 1293      64736E00 
- 1294              	.LASF37:
- 1295 0045 43795261 		.ascii	"CyRamVectors\000"
- 1295      6D566563 
- 1295      746F7273 
- 1295      00
- 1296              	.LASF30:
- 1297 0052 53747269 		.ascii	"StripLights_fisr_Stop\000"
- 1297      704C6967 
- 1297      6874735F 
- 1297      66697372 
- 1297      5F53746F 
- 1298              	.LASF3:
- 1299 0068 73686F72 		.ascii	"short unsigned int\000"
- 1299      7420756E 
- 1299      7369676E 
- 1299      65642069 
- 1299      6E7400
- 1300              	.LASF18:
- 1301 007b 53747269 		.ascii	"StripLights_fisr_SetPriority\000"
- 1301      704C6967 
- 1301      6874735F 
- 1301      66697372 
- 1301      5F536574 
- 1302              	.LASF29:
- 1303 0098 53747269 		.ascii	"StripLights_fisr_StartEx\000"
- 1303      704C6967 
- 1303      6874735F 
- 1303      66697372 
- 1303      5F537461 
- 1304              	.LASF26:
- 1305 00b1 53747269 		.ascii	"StripLights_fisr_GetState\000"
- 1305      704C6967 
- 1305      6874735F 
- 1305      66697372 
- 1305      5F476574 
- 1306              	.LASF24:
- 1307 00cb 53747269 		.ascii	"StripLights_fisr_Enable\000"
- 1307      704C6967 
- 1307      6874735F 
- 1307      66697372 
- 1307      5F456E61 
- 1308              	.LASF25:
- 1309 00e3 53747269 		.ascii	"StripLights_fisr_GetVector\000"
- 1309      704C6967 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 32
+ 1291              	.LASF37:
+ 1292 0006 43795261 		.ascii	"CyRamVectors\000"
+ 1292      6D566563 
+ 1292      746F7273 
+ 1292      00
+ 1293              	.LASF30:
+ 1294 0013 53747269 		.ascii	"StripLights_fisr_Stop\000"
+ 1294      704C6967 
+ 1294      6874735F 
+ 1294      66697372 
+ 1294      5F53746F 
+ 1295              	.LASF3:
+ 1296 0029 73686F72 		.ascii	"short unsigned int\000"
+ 1296      7420756E 
+ 1296      7369676E 
+ 1296      65642069 
+ 1296      6E7400
+ 1297              	.LASF18:
+ 1298 003c 53747269 		.ascii	"StripLights_fisr_SetPriority\000"
+ 1298      704C6967 
+ 1298      6874735F 
+ 1298      66697372 
+ 1298      5F536574 
+ 1299              	.LASF29:
+ 1300 0059 53747269 		.ascii	"StripLights_fisr_StartEx\000"
+ 1300      704C6967 
+ 1300      6874735F 
+ 1300      66697372 
+ 1300      5F537461 
+ 1301              	.LASF26:
+ 1302 0072 53747269 		.ascii	"StripLights_fisr_GetState\000"
+ 1302      704C6967 
+ 1302      6874735F 
+ 1302      66697372 
+ 1302      5F476574 
+ 1303              	.LASF24:
+ 1304 008c 53747269 		.ascii	"StripLights_fisr_Enable\000"
+ 1304      704C6967 
+ 1304      6874735F 
+ 1304      66697372 
+ 1304      5F456E61 
+ 1305              	.LASF25:
+ 1306 00a4 53747269 		.ascii	"StripLights_fisr_GetVector\000"
+ 1306      704C6967 
+ 1306      6874735F 
+ 1306      66697372 
+ 1306      5F476574 
+ 1307              	.LASF11:
+ 1308 00bf 666C6F61 		.ascii	"float\000"
+ 1308      7400
+ 1309              	.LASF23:
+ 1310 00c5 53747269 		.ascii	"StripLights_fisr_Interrupt\000"
+ 1310      704C6967 
+ 1310      6874735F 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 32
 
 
- 1309      6874735F 
- 1309      66697372 
- 1309      5F476574 
- 1310              	.LASF11:
- 1311 00fe 666C6F61 		.ascii	"float\000"
- 1311      7400
- 1312              	.LASF23:
- 1313 0104 53747269 		.ascii	"StripLights_fisr_Interrupt\000"
- 1313      704C6967 
- 1313      6874735F 
- 1313      66697372 
- 1313      5F496E74 
- 1314              	.LASF7:
- 1315 011f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1315      206C6F6E 
- 1315      6720756E 
- 1315      7369676E 
- 1315      65642069 
- 1316              	.LASF1:
- 1317 0136 756E7369 		.ascii	"unsigned char\000"
- 1317      676E6564 
- 1317      20636861 
- 1317      7200
- 1318              	.LASF27:
- 1319 0144 53747269 		.ascii	"StripLights_fisr_Disable\000"
- 1319      704C6967 
- 1319      6874735F 
- 1319      66697372 
- 1319      5F446973 
- 1320              	.LASF21:
- 1321 015d 696E7465 		.ascii	"interruptState\000"
- 1321      72727570 
- 1321      74537461 
- 1321      746500
- 1322              	.LASF5:
- 1323 016c 6C6F6E67 		.ascii	"long unsigned int\000"
- 1323      20756E73 
- 1323      69676E65 
- 1323      6420696E 
- 1323      7400
- 1324              	.LASF9:
- 1325 017e 75696E74 		.ascii	"uint8\000"
- 1325      3800
- 1326              	.LASF20:
- 1327 0184 7072696F 		.ascii	"priority\000"
- 1327      72697479 
- 1327      00
+ 1310      66697372 
+ 1310      5F496E74 
+ 1311              	.LASF7:
+ 1312 00e0 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1312      206C6F6E 
+ 1312      6720756E 
+ 1312      7369676E 
+ 1312      65642069 
+ 1313              	.LASF1:
+ 1314 00f7 756E7369 		.ascii	"unsigned char\000"
+ 1314      676E6564 
+ 1314      20636861 
+ 1314      7200
+ 1315              	.LASF27:
+ 1316 0105 53747269 		.ascii	"StripLights_fisr_Disable\000"
+ 1316      704C6967 
+ 1316      6874735F 
+ 1316      66697372 
+ 1316      5F446973 
+ 1317              	.LASF21:
+ 1318 011e 696E7465 		.ascii	"interruptState\000"
+ 1318      72727570 
+ 1318      74537461 
+ 1318      746500
+ 1319              	.LASF5:
+ 1320 012d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1320      20756E73 
+ 1320      69676E65 
+ 1320      6420696E 
+ 1320      7400
+ 1321              	.LASF9:
+ 1322 013f 75696E74 		.ascii	"uint8\000"
+ 1322      3800
+ 1323              	.LASF20:
+ 1324 0145 7072696F 		.ascii	"priority\000"
+ 1324      72697479 
+ 1324      00
+ 1325              	.LASF35:
+ 1326 014e 463A5C44 		.ascii	"F:\\Downloads\\FunWithLEDs\\FunWithLEDs\\EndOfTheAn"
+ 1326      6F776E6C 
+ 1326      6F616473 
+ 1326      5C46756E 
+ 1326      57697468 
+ 1327 017d 616C6F67 		.ascii	"alogTrail\\EndOfTheAnalogTrail.cydsn\000"
+ 1327      54726169 
+ 1327      6C5C456E 
+ 1327      644F6654 
+ 1327      6865416E 
  1328              	.LASF12:
- 1329 018d 646F7562 		.ascii	"double\000"
+ 1329 01a1 646F7562 		.ascii	"double\000"
  1329      6C6500
  1330              	.LASF32:
- 1331 0194 53747269 		.ascii	"StripLights_fisr_ClearPending\000"
+ 1331 01a8 53747269 		.ascii	"StripLights_fisr_ClearPending\000"
  1331      704C6967 
  1331      6874735F 
  1331      66697372 
  1331      5F436C65 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 33
+
+
  1332              	.LASF10:
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 33
-
-
- 1333 01b2 75696E74 		.ascii	"uint32\000"
+ 1333 01c6 75696E74 		.ascii	"uint32\000"
  1333      333200
  1334              	.LASF38:
- 1335 01b9 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1335 01cd 4379456E 		.ascii	"CyEnterCriticalSection\000"
  1335      74657243 
  1335      72697469 
  1335      63616C53 
  1335      65637469 
  1336              	.LASF8:
- 1337 01d0 756E7369 		.ascii	"unsigned int\000"
+ 1337 01e4 756E7369 		.ascii	"unsigned int\000"
  1337      676E6564 
  1337      20696E74 
  1337      00
  1338              	.LASF19:
- 1339 01dd 61646472 		.ascii	"address\000"
+ 1339 01f1 61646472 		.ascii	"address\000"
  1339      65737300 
  1340              	.LASF39:
- 1341 01e5 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1341 01f9 43794578 		.ascii	"CyExitCriticalSection\000"
  1341      69744372 
  1341      69746963 
  1341      616C5365 
  1341      6374696F 
  1342              	.LASF15:
- 1343 01fb 63796973 		.ascii	"cyisraddress\000"
+ 1343 020f 63796973 		.ascii	"cyisraddress\000"
  1343      72616464 
  1343      72657373 
  1343      00
  1344              	.LASF16:
- 1345 0208 73697A65 		.ascii	"sizetype\000"
+ 1345 021c 73697A65 		.ascii	"sizetype\000"
  1345      74797065 
  1345      00
  1346              	.LASF6:
- 1347 0211 6C6F6E67 		.ascii	"long long int\000"
+ 1347 0225 6C6F6E67 		.ascii	"long long int\000"
  1347      206C6F6E 
  1347      6720696E 
  1347      7400
  1348              	.LASF28:
- 1349 021f 53747269 		.ascii	"StripLights_fisr_Start\000"
+ 1349 0233 53747269 		.ascii	"StripLights_fisr_Start\000"
  1349      704C6967 
  1349      6874735F 
  1349      66697372 
  1349      5F537461 
  1350              	.LASF13:
- 1351 0236 63686172 		.ascii	"char\000"
+ 1351 024a 63686172 		.ascii	"char\000"
  1351      00
  1352              	.LASF36:
- 1353 023b 53747269 		.ascii	"StripLights_fisr_GetPriority\000"
+ 1353 024f 53747269 		.ascii	"StripLights_fisr_GetPriority\000"
  1353      704C6967 
  1353      6874735F 
  1353      66697372 
  1353      5F476574 
  1354              	.LASF31:
- 1355 0258 53747269 		.ascii	"StripLights_fisr_SetPending\000"
+ 1355 026c 53747269 		.ascii	"StripLights_fisr_SetPending\000"
  1355      704C6967 
  1355      6874735F 
  1355      66697372 
+ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\ccZ9z0hc.s 			page 34
+
+
  1355      5F536574 
-ARM GAS  C:\Users\JONSHA~1\AppData\Local\Temp\cckizkbH.s 			page 34
-
-
  1356              	.LASF33:
- 1357 0274 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1357 0288 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1357      4320342E 
  1357      392E3320 
  1357      32303135 
  1357      30333033 
- 1358 02a7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1358 02bb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  1358      20726576 
  1358      6973696F 
  1358      6E203232 
  1358      31323230 
- 1359 02da 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1359 02ee 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  1359      66756E63 
  1359      74696F6E 
  1359      2D736563 
  1359      74696F6E 
  1360              	.LASF34:
- 1361 0302 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\StripLights_fisr.c\000"
+ 1361 0316 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\StripLights_fisr.c\000"
  1361      6E657261 
  1361      7465645F 
  1361      536F7572 
  1361      63655C50 
  1362              	.LASF2:
- 1363 032e 73686F72 		.ascii	"short int\000"
+ 1363 0342 73686F72 		.ascii	"short int\000"
  1363      7420696E 
  1363      7400
  1364              	.LASF22:
- 1365 0338 7072696F 		.ascii	"priorityOffset\000"
+ 1365 034c 7072696F 		.ascii	"priorityOffset\000"
  1365      72697479 
  1365      4F666673 
  1365      657400
  1366              	.LASF4:
- 1367 0347 6C6F6E67 		.ascii	"long int\000"
+ 1367 035b 6C6F6E67 		.ascii	"long int\000"
  1367      20696E74 
  1367      00
  1368              	.LASF17:
- 1369 0350 53747269 		.ascii	"StripLights_fisr_SetVector\000"
+ 1369 0364 53747269 		.ascii	"StripLights_fisr_SetVector\000"
  1369      704C6967 
  1369      6874735F 
  1369      66697372 
  1369      5F536574 
  1370              	.LASF0:
- 1371 036b 7369676E 		.ascii	"signed char\000"
+ 1371 037f 7369676E 		.ascii	"signed char\000"
  1371      65642063 
  1371      68617200 
  1372              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
